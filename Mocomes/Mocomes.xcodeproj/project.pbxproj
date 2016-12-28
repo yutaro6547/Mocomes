@@ -18,6 +18,7 @@
 		DBAD9B271E1402B3000BDAD1 /* SwiftyDropbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBAD9B261E1402B3000BDAD1 /* SwiftyDropbox.framework */; };
 		DBAD9B291E1402C6000BDAD1 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBAD9B281E1402C6000BDAD1 /* Alamofire.framework */; };
 		DBAD9B2B1E1402DC000BDAD1 /* RAMAnimatedTabBarController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBAD9B2A1E1402DC000BDAD1 /* RAMAnimatedTabBarController.framework */; };
+		DBAD9B2D1E140C13000BDAD1 /* CAPSPageMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBAD9B2C1E140C13000BDAD1 /* CAPSPageMenu.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		DBAD9B261E1402B3000BDAD1 /* SwiftyDropbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyDropbox.framework; path = Carthage/Build/iOS/SwiftyDropbox.framework; sourceTree = SOURCE_ROOT; };
 		DBAD9B281E1402C6000BDAD1 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = SOURCE_ROOT; };
 		DBAD9B2A1E1402DC000BDAD1 /* RAMAnimatedTabBarController.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RAMAnimatedTabBarController.framework; path = Carthage/Build/iOS/RAMAnimatedTabBarController.framework; sourceTree = SOURCE_ROOT; };
+		DBAD9B2C1E140C13000BDAD1 /* CAPSPageMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CAPSPageMenu.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 			children = (
 				DB1B00971E13ECA200ABF2CA /* Menu */,
 				DB1B00961E13EC2900ABF2CA /* Basics */,
+				DBAD9B2E1E140C1D000BDAD1 /* PageMenu */,
 				DB1B006F1E13E3CE00ABF2CA /* Assets.xcassets */,
 			);
 			path = Mocomes;
@@ -164,6 +167,14 @@
 			);
 			name = Frameworks;
 			path = Mocomes;
+			sourceTree = "<group>";
+		};
+		DBAD9B2E1E140C1D000BDAD1 /* PageMenu */ = {
+			isa = PBXGroup;
+			children = (
+				DBAD9B2C1E140C13000BDAD1 /* CAPSPageMenu.swift */,
+			);
+			name = PageMenu;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,7 +242,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0820;
 				LastUpgradeCheck = 0820;
-				ORGANIZATIONNAME = "鈴木裕太朗";
+				ORGANIZATIONNAME = ytzuki;
 				TargetAttributes = {
 					DB1B00641E13E3CD00ABF2CA = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -303,7 +314,6 @@
 			files = (
 			);
 			inputPaths = (
-				"$(SRCROOT)/Carthage/Build/iOS/PageMenu.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/SwiftyJSON.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/animated-tab-bar.framework",
@@ -325,6 +335,7 @@
 			files = (
 				DB1B006B1E13E3CE00ABF2CA /* ViewController.swift in Sources */,
 				DB1B00691E13E3CE00ABF2CA /* AppDelegate.swift in Sources */,
+				DBAD9B2D1E140C13000BDAD1 /* CAPSPageMenu.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

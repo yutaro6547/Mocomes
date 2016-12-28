@@ -1,4 +1,5 @@
 github "Alamofire/Alamofire"
 github "SwiftyJSON/SwiftyJSON"
 github "dropbox/SwiftyDropbox"
+github "Ramotion/animated-tab-bar"
 

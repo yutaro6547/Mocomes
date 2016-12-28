@@ -2,8 +2,8 @@
 //  AppDelegate.swift
 //  Mocomes
 //
-//  Created by 鈴木裕太朗 on 2016/12/28.
-//  Copyright © 2016年 鈴木裕太朗. All rights reserved.
+//  Created by ytzuki on 2016/12/28.
+//  Copyright © 2016年 ytzuki. All rights reserved.
 //
 
 import UIKit
