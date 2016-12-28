@@ -97,12 +97,9 @@
 		DB1B00671E13E3CE00ABF2CA /* Mocomes */ = {
 			isa = PBXGroup;
 			children = (
-				DB1B00681E13E3CE00ABF2CA /* AppDelegate.swift */,
-				DB1B006A1E13E3CE00ABF2CA /* ViewController.swift */,
-				DB1B006C1E13E3CE00ABF2CA /* Main.storyboard */,
+				DB1B00971E13ECA200ABF2CA /* Menu */,
+				DB1B00961E13EC2900ABF2CA /* Basics */,
 				DB1B006F1E13E3CE00ABF2CA /* Assets.xcassets */,
-				DB1B00711E13E3CE00ABF2CA /* LaunchScreen.storyboard */,
-				DB1B00741E13E3CE00ABF2CA /* Info.plist */,
 			);
 			path = Mocomes;
 			sourceTree = "<group>";
@@ -123,6 +120,25 @@
 				DB1B008A1E13E3CE00ABF2CA /* Info.plist */,
 			);
 			path = MocomesUITests;
+			sourceTree = "<group>";
+		};
+		DB1B00961E13EC2900ABF2CA /* Basics */ = {
+			isa = PBXGroup;
+			children = (
+				DB1B00681E13E3CE00ABF2CA /* AppDelegate.swift */,
+				DB1B00711E13E3CE00ABF2CA /* LaunchScreen.storyboard */,
+				DB1B00741E13E3CE00ABF2CA /* Info.plist */,
+			);
+			name = Basics;
+			sourceTree = "<group>";
+		};
+		DB1B00971E13ECA200ABF2CA /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				DB1B006A1E13E3CE00ABF2CA /* ViewController.swift */,
+				DB1B006C1E13E3CE00ABF2CA /* Main.storyboard */,
+			);
+			name = Menu;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
