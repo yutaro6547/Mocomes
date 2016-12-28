@@ -1,0 +1,528 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DB1B00691E13E3CE00ABF2CA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1B00681E13E3CE00ABF2CA /* AppDelegate.swift */; };
+		DB1B006B1E13E3CE00ABF2CA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1B006A1E13E3CE00ABF2CA /* ViewController.swift */; };
+		DB1B006E1E13E3CE00ABF2CA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB1B006C1E13E3CE00ABF2CA /* Main.storyboard */; };
+		DB1B00701E13E3CE00ABF2CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB1B006F1E13E3CE00ABF2CA /* Assets.xcassets */; };
+		DB1B00731E13E3CE00ABF2CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB1B00711E13E3CE00ABF2CA /* LaunchScreen.storyboard */; };
+		DB1B007E1E13E3CE00ABF2CA /* MocomesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1B007D1E13E3CE00ABF2CA /* MocomesTests.swift */; };
+		DB1B00891E13E3CE00ABF2CA /* MocomesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1B00881E13E3CE00ABF2CA /* MocomesUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DB1B007A1E13E3CE00ABF2CA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DB1B005D1E13E3CD00ABF2CA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DB1B00641E13E3CD00ABF2CA;
+			remoteInfo = Mocomes;
+		};
+		DB1B00851E13E3CE00ABF2CA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DB1B005D1E13E3CD00ABF2CA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DB1B00641E13E3CD00ABF2CA;
+			remoteInfo = Mocomes;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DB1B00651E13E3CE00ABF2CA /* Mocomes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mocomes.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB1B00681E13E3CE00ABF2CA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DB1B006A1E13E3CE00ABF2CA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DB1B006D1E13E3CE00ABF2CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DB1B006F1E13E3CE00ABF2CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DB1B00721E13E3CE00ABF2CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DB1B00741E13E3CE00ABF2CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DB1B00791E13E3CE00ABF2CA /* MocomesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MocomesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB1B007D1E13E3CE00ABF2CA /* MocomesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MocomesTests.swift; sourceTree = "<group>"; };
+		DB1B007F1E13E3CE00ABF2CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DB1B00841E13E3CE00ABF2CA /* MocomesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MocomesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB1B00881E13E3CE00ABF2CA /* MocomesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MocomesUITests.swift; sourceTree = "<group>"; };
+		DB1B008A1E13E3CE00ABF2CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DB1B00621E13E3CD00ABF2CA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB1B00761E13E3CE00ABF2CA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB1B00811E13E3CE00ABF2CA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DB1B005C1E13E3CD00ABF2CA = {
+			isa = PBXGroup;
+			children = (
+				DB1B00671E13E3CE00ABF2CA /* Mocomes */,
+				DB1B007C1E13E3CE00ABF2CA /* MocomesTests */,
+				DB1B00871E13E3CE00ABF2CA /* MocomesUITests */,
+				DB1B00661E13E3CE00ABF2CA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DB1B00661E13E3CE00ABF2CA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DB1B00651E13E3CE00ABF2CA /* Mocomes.app */,
+				DB1B00791E13E3CE00ABF2CA /* MocomesTests.xctest */,
+				DB1B00841E13E3CE00ABF2CA /* MocomesUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DB1B00671E13E3CE00ABF2CA /* Mocomes */ = {
+			isa = PBXGroup;
+			children = (
+				DB1B00681E13E3CE00ABF2CA /* AppDelegate.swift */,
+				DB1B006A1E13E3CE00ABF2CA /* ViewController.swift */,
+				DB1B006C1E13E3CE00ABF2CA /* Main.storyboard */,
+				DB1B006F1E13E3CE00ABF2CA /* Assets.xcassets */,
+				DB1B00711E13E3CE00ABF2CA /* LaunchScreen.storyboard */,
+				DB1B00741E13E3CE00ABF2CA /* Info.plist */,
+			);
+			path = Mocomes;
+			sourceTree = "<group>";
+		};
+		DB1B007C1E13E3CE00ABF2CA /* MocomesTests */ = {
+			isa = PBXGroup;
+			children = (
+				DB1B007D1E13E3CE00ABF2CA /* MocomesTests.swift */,
+				DB1B007F1E13E3CE00ABF2CA /* Info.plist */,
+			);
+			path = MocomesTests;
+			sourceTree = "<group>";
+		};
+		DB1B00871E13E3CE00ABF2CA /* MocomesUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DB1B00881E13E3CE00ABF2CA /* MocomesUITests.swift */,
+				DB1B008A1E13E3CE00ABF2CA /* Info.plist */,
+			);
+			path = MocomesUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DB1B00641E13E3CD00ABF2CA /* Mocomes */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DB1B008D1E13E3CE00ABF2CA /* Build configuration list for PBXNativeTarget "Mocomes" */;
+			buildPhases = (
+				DB1B00611E13E3CD00ABF2CA /* Sources */,
+				DB1B00621E13E3CD00ABF2CA /* Frameworks */,
+				DB1B00631E13E3CD00ABF2CA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Mocomes;
+			productName = Mocomes;
+			productReference = DB1B00651E13E3CE00ABF2CA /* Mocomes.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DB1B00781E13E3CE00ABF2CA /* MocomesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DB1B00901E13E3CE00ABF2CA /* Build configuration list for PBXNativeTarget "MocomesTests" */;
+			buildPhases = (
+				DB1B00751E13E3CE00ABF2CA /* Sources */,
+				DB1B00761E13E3CE00ABF2CA /* Frameworks */,
+				DB1B00771E13E3CE00ABF2CA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DB1B007B1E13E3CE00ABF2CA /* PBXTargetDependency */,
+			);
+			name = MocomesTests;
+			productName = MocomesTests;
+			productReference = DB1B00791E13E3CE00ABF2CA /* MocomesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DB1B00831E13E3CE00ABF2CA /* MocomesUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DB1B00931E13E3CE00ABF2CA /* Build configuration list for PBXNativeTarget "MocomesUITests" */;
+			buildPhases = (
+				DB1B00801E13E3CE00ABF2CA /* Sources */,
+				DB1B00811E13E3CE00ABF2CA /* Frameworks */,
+				DB1B00821E13E3CE00ABF2CA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DB1B00861E13E3CE00ABF2CA /* PBXTargetDependency */,
+			);
+			name = MocomesUITests;
+			productName = MocomesUITests;
+			productReference = DB1B00841E13E3CE00ABF2CA /* MocomesUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DB1B005D1E13E3CD00ABF2CA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "鈴木裕太朗";
+				TargetAttributes = {
+					DB1B00641E13E3CD00ABF2CA = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+					DB1B00781E13E3CE00ABF2CA = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = DB1B00641E13E3CD00ABF2CA;
+					};
+					DB1B00831E13E3CE00ABF2CA = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = DB1B00641E13E3CD00ABF2CA;
+					};
+				};
+			};
+			buildConfigurationList = DB1B00601E13E3CD00ABF2CA /* Build configuration list for PBXProject "Mocomes" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DB1B005C1E13E3CD00ABF2CA;
+			productRefGroup = DB1B00661E13E3CE00ABF2CA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DB1B00641E13E3CD00ABF2CA /* Mocomes */,
+				DB1B00781E13E3CE00ABF2CA /* MocomesTests */,
+				DB1B00831E13E3CE00ABF2CA /* MocomesUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DB1B00631E13E3CD00ABF2CA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB1B00731E13E3CE00ABF2CA /* LaunchScreen.storyboard in Resources */,
+				DB1B00701E13E3CE00ABF2CA /* Assets.xcassets in Resources */,
+				DB1B006E1E13E3CE00ABF2CA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB1B00771E13E3CE00ABF2CA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB1B00821E13E3CE00ABF2CA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DB1B00611E13E3CD00ABF2CA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB1B006B1E13E3CE00ABF2CA /* ViewController.swift in Sources */,
+				DB1B00691E13E3CE00ABF2CA /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB1B00751E13E3CE00ABF2CA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB1B007E1E13E3CE00ABF2CA /* MocomesTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB1B00801E13E3CE00ABF2CA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB1B00891E13E3CE00ABF2CA /* MocomesUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DB1B007B1E13E3CE00ABF2CA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DB1B00641E13E3CD00ABF2CA /* Mocomes */;
+			targetProxy = DB1B007A1E13E3CE00ABF2CA /* PBXContainerItemProxy */;
+		};
+		DB1B00861E13E3CE00ABF2CA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DB1B00641E13E3CD00ABF2CA /* Mocomes */;
+			targetProxy = DB1B00851E13E3CE00ABF2CA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DB1B006C1E13E3CE00ABF2CA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DB1B006D1E13E3CE00ABF2CA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DB1B00711E13E3CE00ABF2CA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DB1B00721E13E3CE00ABF2CA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DB1B008B1E13E3CE00ABF2CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DB1B008C1E13E3CE00ABF2CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DB1B008E1E13E3CE00ABF2CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Mocomes/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = YutaroSuzuki.Mocomes;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		DB1B008F1E13E3CE00ABF2CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Mocomes/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = YutaroSuzuki.Mocomes;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		DB1B00911E13E3CE00ABF2CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MocomesTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = YutaroSuzuki.MocomesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Mocomes.app/Mocomes";
+			};
+			name = Debug;
+		};
+		DB1B00921E13E3CE00ABF2CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MocomesTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = YutaroSuzuki.MocomesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Mocomes.app/Mocomes";
+			};
+			name = Release;
+		};
+		DB1B00941E13E3CE00ABF2CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = MocomesUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = YutaroSuzuki.MocomesUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Mocomes;
+			};
+			name = Debug;
+		};
+		DB1B00951E13E3CE00ABF2CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = MocomesUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = YutaroSuzuki.MocomesUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Mocomes;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DB1B00601E13E3CD00ABF2CA /* Build configuration list for PBXProject "Mocomes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB1B008B1E13E3CE00ABF2CA /* Debug */,
+				DB1B008C1E13E3CE00ABF2CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DB1B008D1E13E3CE00ABF2CA /* Build configuration list for PBXNativeTarget "Mocomes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB1B008E1E13E3CE00ABF2CA /* Debug */,
+				DB1B008F1E13E3CE00ABF2CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		DB1B00901E13E3CE00ABF2CA /* Build configuration list for PBXNativeTarget "MocomesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB1B00911E13E3CE00ABF2CA /* Debug */,
+				DB1B00921E13E3CE00ABF2CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		DB1B00931E13E3CE00ABF2CA /* Build configuration list for PBXNativeTarget "MocomesUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB1B00941E13E3CE00ABF2CA /* Debug */,
+				DB1B00951E13E3CE00ABF2CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DB1B005D1E13E3CD00ABF2CA /* Project object */;
+}
