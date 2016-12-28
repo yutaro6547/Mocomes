@@ -14,6 +14,10 @@
 		DB1B00731E13E3CE00ABF2CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB1B00711E13E3CE00ABF2CA /* LaunchScreen.storyboard */; };
 		DB1B007E1E13E3CE00ABF2CA /* MocomesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1B007D1E13E3CE00ABF2CA /* MocomesTests.swift */; };
 		DB1B00891E13E3CE00ABF2CA /* MocomesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1B00881E13E3CE00ABF2CA /* MocomesUITests.swift */; };
+		DBAD9B251E14029B000BDAD1 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBAD9B241E14029B000BDAD1 /* SwiftyJSON.framework */; };
+		DBAD9B271E1402B3000BDAD1 /* SwiftyDropbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBAD9B261E1402B3000BDAD1 /* SwiftyDropbox.framework */; };
+		DBAD9B291E1402C6000BDAD1 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBAD9B281E1402C6000BDAD1 /* Alamofire.framework */; };
+		DBAD9B2B1E1402DC000BDAD1 /* RAMAnimatedTabBarController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBAD9B2A1E1402DC000BDAD1 /* RAMAnimatedTabBarController.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +51,10 @@
 		DB1B00841E13E3CE00ABF2CA /* MocomesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MocomesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB1B00881E13E3CE00ABF2CA /* MocomesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MocomesUITests.swift; sourceTree = "<group>"; };
 		DB1B008A1E13E3CE00ABF2CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DBAD9B241E14029B000BDAD1 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = SOURCE_ROOT; };
+		DBAD9B261E1402B3000BDAD1 /* SwiftyDropbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyDropbox.framework; path = Carthage/Build/iOS/SwiftyDropbox.framework; sourceTree = SOURCE_ROOT; };
+		DBAD9B281E1402C6000BDAD1 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = SOURCE_ROOT; };
+		DBAD9B2A1E1402DC000BDAD1 /* RAMAnimatedTabBarController.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RAMAnimatedTabBarController.framework; path = Carthage/Build/iOS/RAMAnimatedTabBarController.framework; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +62,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DBAD9B2B1E1402DC000BDAD1 /* RAMAnimatedTabBarController.framework in Frameworks */,
+				DBAD9B291E1402C6000BDAD1 /* Alamofire.framework in Frameworks */,
+				DBAD9B271E1402B3000BDAD1 /* SwiftyDropbox.framework in Frameworks */,
+				DBAD9B251E14029B000BDAD1 /* SwiftyJSON.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +93,7 @@
 				DB1B007C1E13E3CE00ABF2CA /* MocomesTests */,
 				DB1B00871E13E3CE00ABF2CA /* MocomesUITests */,
 				DB1B00661E13E3CE00ABF2CA /* Products */,
+				DBAD9B231E13FE9D000BDAD1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -141,6 +154,18 @@
 			name = Menu;
 			sourceTree = "<group>";
 		};
+		DBAD9B231E13FE9D000BDAD1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DBAD9B2A1E1402DC000BDAD1 /* RAMAnimatedTabBarController.framework */,
+				DBAD9B281E1402C6000BDAD1 /* Alamofire.framework */,
+				DBAD9B261E1402B3000BDAD1 /* SwiftyDropbox.framework */,
+				DBAD9B241E14029B000BDAD1 /* SwiftyJSON.framework */,
+			);
+			name = Frameworks;
+			path = Mocomes;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -151,6 +176,7 @@
 				DB1B00611E13E3CD00ABF2CA /* Sources */,
 				DB1B00621E13E3CD00ABF2CA /* Frameworks */,
 				DB1B00631E13E3CD00ABF2CA /* Resources */,
+				DBAD9B221E13FBB6000BDAD1 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -269,6 +295,28 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		DBAD9B221E13FBB6000BDAD1 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/PageMenu.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SwiftyJSON.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/animated-tab-bar.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SwiftyDropbox.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/AlamofireImage.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		DB1B00611E13E3CD00ABF2CA /* Sources */ = {
@@ -428,6 +476,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Mocomes/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = YutaroSuzuki.Mocomes;
@@ -440,6 +492,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Mocomes/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = YutaroSuzuki.Mocomes;
@@ -521,6 +577,7 @@
 				DB1B008F1E13E3CE00ABF2CA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DB1B00901E13E3CE00ABF2CA /* Build configuration list for PBXNativeTarget "MocomesTests" */ = {
 			isa = XCConfigurationList;
@@ -529,6 +586,7 @@
 				DB1B00921E13E3CE00ABF2CA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DB1B00931E13E3CE00ABF2CA /* Build configuration list for PBXNativeTarget "MocomesUITests" */ = {
 			isa = XCConfigurationList;
@@ -537,6 +595,7 @@
 				DB1B00951E13E3CE00ABF2CA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
