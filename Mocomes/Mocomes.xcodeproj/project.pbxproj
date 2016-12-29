@@ -19,6 +19,11 @@
 		DBB011EA1E153AF100AE2367 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBB011E91E153AF100AE2367 /* Security.framework */; };
 		DBB011EE1E153C6C00AE2367 /* MenuScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB011ED1E153C6C00AE2367 /* MenuScreen.swift */; };
 		DBB011F41E153D5000AE2367 /* MenuScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBB011F31E153D5000AE2367 /* MenuScreen.storyboard */; };
+		DBB011F61E153F2400AE2367 /* MenuTabScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB011F51E153F2400AE2367 /* MenuTabScreen.swift */; };
+		DBB011F81E15475A00AE2367 /* MenuTabUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB011F71E15475A00AE2367 /* MenuTabUser.swift */; };
+		DBB011FA1E15476A00AE2367 /* MenuTabTalk.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB011F91E15476A00AE2367 /* MenuTabTalk.swift */; };
+		DBB011FC1E15477900AE2367 /* MenuTabTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB011FB1E15477900AE2367 /* MenuTabTime.swift */; };
+		DBB011FE1E15478800AE2367 /* MenuTabSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB011FD1E15478800AE2367 /* MenuTabSetting.swift */; };
 		DBD1D0BC1E14D08900C60072 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBD1D0BB1E14D08900C60072 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
@@ -61,6 +66,11 @@
 		DBB011E91E153AF100AE2367 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		DBB011ED1E153C6C00AE2367 /* MenuScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuScreen.swift; sourceTree = "<group>"; };
 		DBB011F31E153D5000AE2367 /* MenuScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MenuScreen.storyboard; sourceTree = "<group>"; };
+		DBB011F51E153F2400AE2367 /* MenuTabScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTabScreen.swift; sourceTree = "<group>"; };
+		DBB011F71E15475A00AE2367 /* MenuTabUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTabUser.swift; sourceTree = "<group>"; };
+		DBB011F91E15476A00AE2367 /* MenuTabTalk.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTabTalk.swift; sourceTree = "<group>"; };
+		DBB011FB1E15477900AE2367 /* MenuTabTime.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTabTime.swift; sourceTree = "<group>"; };
+		DBB011FD1E15478800AE2367 /* MenuTabSetting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTabSetting.swift; sourceTree = "<group>"; };
 		DBD1D0BB1E14D08900C60072 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E03E2523060C6D21F513A208 /* Pods_MocomesTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MocomesTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E596006722004053B3021A32 /* Pods-Mocomes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mocomes.release.xcconfig"; path = "Pods/Target Support Files/Pods-Mocomes/Pods-Mocomes.release.xcconfig"; sourceTree = "<group>"; };
@@ -187,7 +197,12 @@
 			isa = PBXGroup;
 			children = (
 				DBB011ED1E153C6C00AE2367 /* MenuScreen.swift */,
+				DBB011F51E153F2400AE2367 /* MenuTabScreen.swift */,
 				DBB011F31E153D5000AE2367 /* MenuScreen.storyboard */,
+				DBB011F71E15475A00AE2367 /* MenuTabUser.swift */,
+				DBB011F91E15476A00AE2367 /* MenuTabTalk.swift */,
+				DBB011FB1E15477900AE2367 /* MenuTabTime.swift */,
+				DBB011FD1E15478800AE2367 /* MenuTabSetting.swift */,
 			);
 			name = Menu;
 			sourceTree = "<group>";
@@ -482,8 +497,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DBB011FA1E15476A00AE2367 /* MenuTabTalk.swift in Sources */,
+				DBB011FE1E15478800AE2367 /* MenuTabSetting.swift in Sources */,
 				DBB011EE1E153C6C00AE2367 /* MenuScreen.swift in Sources */,
+				DBB011FC1E15477900AE2367 /* MenuTabTime.swift in Sources */,
 				DB1B00691E13E3CE00ABF2CA /* AppDelegate.swift in Sources */,
+				DBB011F61E153F2400AE2367 /* MenuTabScreen.swift in Sources */,
+				DBB011F81E15475A00AE2367 /* MenuTabUser.swift in Sources */,
 				DBAD9B2D1E140C13000BDAD1 /* CAPSPageMenu.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MenuScreen: UINavigationController {
+class MenuScreen: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
