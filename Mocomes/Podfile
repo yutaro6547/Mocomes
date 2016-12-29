@@ -1,0 +1,25 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'Mocomes' do
+  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for Mocomes
+    pod 'SwiftyJSON'
+    pod 'SwiftyDropbox'
+    pod 'Alamofire'
+    pod 'RKNotificationHub'
+    pod 'RAMAnimatedTabBarController'
+    pod 'MMPopLabel' 
+  target 'MocomesTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'MocomesUITests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end
