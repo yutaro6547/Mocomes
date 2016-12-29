@@ -17,6 +17,8 @@
 		DB1B007E1E13E3CE00ABF2CA /* MocomesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1B007D1E13E3CE00ABF2CA /* MocomesTests.swift */; };
 		DB1B00891E13E3CE00ABF2CA /* MocomesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1B00881E13E3CE00ABF2CA /* MocomesUITests.swift */; };
 		DBAD9B2D1E140C13000BDAD1 /* CAPSPageMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBAD9B2C1E140C13000BDAD1 /* CAPSPageMenu.swift */; };
+		DBB011E81E153AE500AE2367 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBB011E71E153AE500AE2367 /* SystemConfiguration.framework */; };
+		DBB011EA1E153AF100AE2367 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBB011E91E153AF100AE2367 /* Security.framework */; };
 		DBD1D0BC1E14D08900C60072 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBD1D0BB1E14D08900C60072 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
@@ -57,6 +59,8 @@
 		DB1B00881E13E3CE00ABF2CA /* MocomesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MocomesUITests.swift; sourceTree = "<group>"; };
 		DB1B008A1E13E3CE00ABF2CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DBAD9B2C1E140C13000BDAD1 /* CAPSPageMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CAPSPageMenu.swift; sourceTree = "<group>"; };
+		DBB011E71E153AE500AE2367 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		DBB011E91E153AF100AE2367 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		DBD1D0BB1E14D08900C60072 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E03E2523060C6D21F513A208 /* Pods_MocomesTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MocomesTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E596006722004053B3021A32 /* Pods-Mocomes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mocomes.release.xcconfig"; path = "Pods/Target Support Files/Pods-Mocomes/Pods-Mocomes.release.xcconfig"; sourceTree = "<group>"; };
@@ -68,6 +72,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DBB011EA1E153AF100AE2367 /* Security.framework in Frameworks */,
+				DBB011E81E153AE500AE2367 /* SystemConfiguration.framework in Frameworks */,
 				33CA5A586DF41EE9CB80B318 /* Pods_Mocomes.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -107,6 +113,8 @@
 		A99C850147963884265DEF15 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DBB011E91E153AF100AE2367 /* Security.framework */,
+				DBB011E71E153AE500AE2367 /* SystemConfiguration.framework */,
 				972A0A1E5816728288BB5D8C /* Pods_Mocomes.framework */,
 				E03E2523060C6D21F513A208 /* Pods_MocomesTests.framework */,
 				99D47FFD84CB593FBAC7232B /* Pods_MocomesUITests.framework */,
@@ -649,6 +657,7 @@
 				MACH_O_TYPE = mh_execute;
 				PRODUCT_BUNDLE_IDENTIFIER = YutaroSuzuki.Mocomes;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				RESOURCES_TARGETED_DEVICE_FAMILY = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -666,6 +675,7 @@
 				MACH_O_TYPE = mh_execute;
 				PRODUCT_BUNDLE_IDENTIFIER = YutaroSuzuki.Mocomes;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				RESOURCES_TARGETED_DEVICE_FAMILY = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
