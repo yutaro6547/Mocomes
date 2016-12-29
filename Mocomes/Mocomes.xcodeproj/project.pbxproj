@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		161871CAA30B940AC459C526 /* Pods_MocomesUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C746BCBF43205B2843810C28 /* Pods_MocomesUITests.framework */; };
+		5BAE18FF485959AB665D479B /* Pods_MocomesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43A9FA0C30DEF8637D9FADAC /* Pods_MocomesTests.framework */; };
 		DB1B00691E13E3CE00ABF2CA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1B00681E13E3CE00ABF2CA /* AppDelegate.swift */; };
 		DB1B006B1E13E3CE00ABF2CA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1B006A1E13E3CE00ABF2CA /* ViewController.swift */; };
 		DB1B006E1E13E3CE00ABF2CA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB1B006C1E13E3CE00ABF2CA /* Main.storyboard */; };
@@ -14,6 +16,7 @@
 		DB1B00731E13E3CE00ABF2CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB1B00711E13E3CE00ABF2CA /* LaunchScreen.storyboard */; };
 		DB1B007E1E13E3CE00ABF2CA /* MocomesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1B007D1E13E3CE00ABF2CA /* MocomesTests.swift */; };
 		DB1B00891E13E3CE00ABF2CA /* MocomesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1B00881E13E3CE00ABF2CA /* MocomesUITests.swift */; };
+		E28237804A5C7874816DDF76 /* Pods_Mocomes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D33CBE874EC3555335C82365 /* Pods_Mocomes.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +37,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		34ADD8B07268FEE7E5D55506 /* Pods-Mocomes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mocomes.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Mocomes/Pods-Mocomes.debug.xcconfig"; sourceTree = "<group>"; };
+		43A9FA0C30DEF8637D9FADAC /* Pods_MocomesTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MocomesTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A39B9C9148126410A004970 /* Pods-MocomesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MocomesTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MocomesTests/Pods-MocomesTests.release.xcconfig"; sourceTree = "<group>"; };
+		66DA2C0E478DA8D6A65EBDE1 /* Pods-MocomesUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MocomesUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MocomesUITests/Pods-MocomesUITests.release.xcconfig"; sourceTree = "<group>"; };
+		C5C3CD869D9F8116463BA7E5 /* Pods-Mocomes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mocomes.release.xcconfig"; path = "Pods/Target Support Files/Pods-Mocomes/Pods-Mocomes.release.xcconfig"; sourceTree = "<group>"; };
+		C746BCBF43205B2843810C28 /* Pods_MocomesUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MocomesUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D33CBE874EC3555335C82365 /* Pods_Mocomes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Mocomes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5B25FAC309BD06ED402CA31 /* Pods-MocomesUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MocomesUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MocomesUITests/Pods-MocomesUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		DB1B00651E13E3CE00ABF2CA /* Mocomes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mocomes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB1B00681E13E3CE00ABF2CA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DB1B006A1E13E3CE00ABF2CA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +58,7 @@
 		DB1B00841E13E3CE00ABF2CA /* MocomesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MocomesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB1B00881E13E3CE00ABF2CA /* MocomesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MocomesUITests.swift; sourceTree = "<group>"; };
 		DB1B008A1E13E3CE00ABF2CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FDDC17AC5C0280CCC0D43EB1 /* Pods-MocomesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MocomesTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MocomesTests/Pods-MocomesTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E28237804A5C7874816DDF76 /* Pods_Mocomes.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5BAE18FF485959AB665D479B /* Pods_MocomesTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,12 +82,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				161871CAA30B940AC459C526 /* Pods_MocomesUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6CC5BDD61A8F2A5337A33E85 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D33CBE874EC3555335C82365 /* Pods_Mocomes.framework */,
+				43A9FA0C30DEF8637D9FADAC /* Pods_MocomesTests.framework */,
+				C746BCBF43205B2843810C28 /* Pods_MocomesUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A59F342DBB6DD1505111B4B8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				34ADD8B07268FEE7E5D55506 /* Pods-Mocomes.debug.xcconfig */,
+				C5C3CD869D9F8116463BA7E5 /* Pods-Mocomes.release.xcconfig */,
+				FDDC17AC5C0280CCC0D43EB1 /* Pods-MocomesTests.debug.xcconfig */,
+				5A39B9C9148126410A004970 /* Pods-MocomesTests.release.xcconfig */,
+				D5B25FAC309BD06ED402CA31 /* Pods-MocomesUITests.debug.xcconfig */,
+				66DA2C0E478DA8D6A65EBDE1 /* Pods-MocomesUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		DB1B005C1E13E3CD00ABF2CA = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +119,8 @@
 				DB1B007C1E13E3CE00ABF2CA /* MocomesTests */,
 				DB1B00871E13E3CE00ABF2CA /* MocomesUITests */,
 				DB1B00661E13E3CE00ABF2CA /* Products */,
+				A59F342DBB6DD1505111B4B8 /* Pods */,
+				6CC5BDD61A8F2A5337A33E85 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -132,9 +172,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DB1B008D1E13E3CE00ABF2CA /* Build configuration list for PBXNativeTarget "Mocomes" */;
 			buildPhases = (
+				7E1999E6673A3F54CAC7FE0F /* [CP] Check Pods Manifest.lock */,
 				DB1B00611E13E3CD00ABF2CA /* Sources */,
 				DB1B00621E13E3CD00ABF2CA /* Frameworks */,
 				DB1B00631E13E3CD00ABF2CA /* Resources */,
+				F293CE536B11668EBD6EFF24 /* [CP] Embed Pods Frameworks */,
+				70685A89962E4CEF728D709E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,9 +192,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DB1B00901E13E3CE00ABF2CA /* Build configuration list for PBXNativeTarget "MocomesTests" */;
 			buildPhases = (
+				7205A9ACAA759AE031FCBECB /* [CP] Check Pods Manifest.lock */,
 				DB1B00751E13E3CE00ABF2CA /* Sources */,
 				DB1B00761E13E3CE00ABF2CA /* Frameworks */,
 				DB1B00771E13E3CE00ABF2CA /* Resources */,
+				74126DC072A358179D13DA28 /* [CP] Embed Pods Frameworks */,
+				EE9D0761A727F71E65BF35A9 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,9 +213,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DB1B00931E13E3CE00ABF2CA /* Build configuration list for PBXNativeTarget "MocomesUITests" */;
 			buildPhases = (
+				7FA5D8CEF3A1A6A84D780429 /* [CP] Check Pods Manifest.lock */,
 				DB1B00801E13E3CE00ABF2CA /* Sources */,
 				DB1B00811E13E3CE00ABF2CA /* Frameworks */,
 				DB1B00821E13E3CE00ABF2CA /* Resources */,
+				8ECA080B46902E6E080C883A /* [CP] Embed Pods Frameworks */,
+				F178CA98D44157B6AFA07D03 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -253,6 +302,144 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		70685A89962E4CEF728D709E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Mocomes/Pods-Mocomes-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7205A9ACAA759AE031FCBECB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		74126DC072A358179D13DA28 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MocomesTests/Pods-MocomesTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7E1999E6673A3F54CAC7FE0F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		7FA5D8CEF3A1A6A84D780429 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8ECA080B46902E6E080C883A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MocomesUITests/Pods-MocomesUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EE9D0761A727F71E65BF35A9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MocomesTests/Pods-MocomesTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F178CA98D44157B6AFA07D03 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MocomesUITests/Pods-MocomesUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F293CE536B11668EBD6EFF24 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Mocomes/Pods-Mocomes-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		DB1B00611E13E3CD00ABF2CA /* Sources */ = {
@@ -410,6 +597,7 @@
 		};
 		DB1B008E1E13E3CE00ABF2CA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 34ADD8B07268FEE7E5D55506 /* Pods-Mocomes.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Mocomes/Info.plist;
@@ -422,6 +610,7 @@
 		};
 		DB1B008F1E13E3CE00ABF2CA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C5C3CD869D9F8116463BA7E5 /* Pods-Mocomes.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Mocomes/Info.plist;
@@ -434,6 +623,7 @@
 		};
 		DB1B00911E13E3CE00ABF2CA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FDDC17AC5C0280CCC0D43EB1 /* Pods-MocomesTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -448,6 +638,7 @@
 		};
 		DB1B00921E13E3CE00ABF2CA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5A39B9C9148126410A004970 /* Pods-MocomesTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -462,6 +653,7 @@
 		};
 		DB1B00941E13E3CE00ABF2CA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D5B25FAC309BD06ED402CA31 /* Pods-MocomesUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = MocomesUITests/Info.plist;
@@ -475,6 +667,7 @@
 		};
 		DB1B00951E13E3CE00ABF2CA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 66DA2C0E478DA8D6A65EBDE1 /* Pods-MocomesUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = MocomesUITests/Info.plist;
