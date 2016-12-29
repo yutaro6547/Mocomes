@@ -21,12 +21,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="LaunchScreen" translatesAutoresizingMaskIntoConstraints="NO" id="49V-HF-uXL">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LaunchScreen" translatesAutoresizingMaskIntoConstraints="NO" id="49V-HF-uXL">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="49V-HF-uXL" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="CTj-ZC-nHY"/>
+                            <constraint firstAttribute="trailing" secondItem="49V-HF-uXL" secondAttribute="trailing" id="FfG-B2-ksD"/>
+                            <constraint firstItem="49V-HF-uXL" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="UhY-2T-NxG"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="49V-HF-uXL" secondAttribute="bottom" id="XB1-i7-Mm3"/>
+                            <constraint firstItem="49V-HF-uXL" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="b2j-RE-aL4"/>
+                            <constraint firstItem="49V-HF-uXL" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="vH2-tR-Rmf"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
