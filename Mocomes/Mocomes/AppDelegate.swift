@@ -12,14 +12,14 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
   
   var window: UIWindow?
-  var initialview: UIViewController?
+  var navigationController: UINavigationController?
 
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
     let storyboard: UIStoryboard = UIStoryboard(name: "MenuScreen", bundle: Bundle.main)
     let mainViewController: UIViewController = storyboard.instantiateInitialViewController()! as UIViewController
     self.window = UIWindow(frame: UIScreen.main.bounds)
-    self.initialview = mainViewController
-    self.window?.rootViewController = initialview
+    self.navigationController = UINavigationController(rootViewController: mainViewController)
+    self.window?.rootViewController = navigationController
     self.window?.makeKeyAndVisible()
     return true
   }

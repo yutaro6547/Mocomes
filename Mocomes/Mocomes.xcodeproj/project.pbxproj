@@ -19,7 +19,6 @@
 		DBB011EA1E153AF100AE2367 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBB011E91E153AF100AE2367 /* Security.framework */; };
 		DBB011EE1E153C6C00AE2367 /* MenuScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB011ED1E153C6C00AE2367 /* MenuScreen.swift */; };
 		DBB011F41E153D5000AE2367 /* MenuScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBB011F31E153D5000AE2367 /* MenuScreen.storyboard */; };
-		DBB011F61E153F2400AE2367 /* MenuTabScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB011F51E153F2400AE2367 /* MenuTabScreen.swift */; };
 		DBB011F81E15475A00AE2367 /* MenuTabUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB011F71E15475A00AE2367 /* MenuTabUser.swift */; };
 		DBB011FA1E15476A00AE2367 /* MenuTabTalk.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB011F91E15476A00AE2367 /* MenuTabTalk.swift */; };
 		DBB011FC1E15477900AE2367 /* MenuTabTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB011FB1E15477900AE2367 /* MenuTabTime.swift */; };
@@ -66,7 +65,6 @@
 		DBB011E91E153AF100AE2367 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		DBB011ED1E153C6C00AE2367 /* MenuScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuScreen.swift; sourceTree = "<group>"; };
 		DBB011F31E153D5000AE2367 /* MenuScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MenuScreen.storyboard; sourceTree = "<group>"; };
-		DBB011F51E153F2400AE2367 /* MenuTabScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTabScreen.swift; sourceTree = "<group>"; };
 		DBB011F71E15475A00AE2367 /* MenuTabUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTabUser.swift; sourceTree = "<group>"; };
 		DBB011F91E15476A00AE2367 /* MenuTabTalk.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTabTalk.swift; sourceTree = "<group>"; };
 		DBB011FB1E15477900AE2367 /* MenuTabTime.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTabTime.swift; sourceTree = "<group>"; };
@@ -197,7 +195,6 @@
 			isa = PBXGroup;
 			children = (
 				DBB011ED1E153C6C00AE2367 /* MenuScreen.swift */,
-				DBB011F51E153F2400AE2367 /* MenuTabScreen.swift */,
 				DBB011F31E153D5000AE2367 /* MenuScreen.storyboard */,
 				DBB011F71E15475A00AE2367 /* MenuTabUser.swift */,
 				DBB011F91E15476A00AE2367 /* MenuTabTalk.swift */,
@@ -502,7 +499,6 @@
 				DBB011EE1E153C6C00AE2367 /* MenuScreen.swift in Sources */,
 				DBB011FC1E15477900AE2367 /* MenuTabTime.swift in Sources */,
 				DB1B00691E13E3CE00ABF2CA /* AppDelegate.swift in Sources */,
-				DBB011F61E153F2400AE2367 /* MenuTabScreen.swift in Sources */,
 				DBB011F81E15475A00AE2367 /* MenuTabUser.swift in Sources */,
 				DBAD9B2D1E140C13000BDAD1 /* CAPSPageMenu.swift in Sources */,
 			);
@@ -660,17 +656,20 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = CDE4B96FED2D29BDA1CF99F6 /* Pods-Mocomes.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = KPET473WUQ;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				GCC_OPTIMIZATION_LEVEL = 0;
 				INFOPLIST_FILE = Mocomes/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MACH_O_TYPE = mh_execute;
+				OTHER_LIBTOOLFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = YutaroSuzuki.Mocomes;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				RESOURCES_TARGETED_DEVICE_FAMILY = "";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -678,17 +677,19 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E596006722004053B3021A32 /* Pods-Mocomes.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = KPET473WUQ;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = Mocomes/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MACH_O_TYPE = mh_execute;
+				OTHER_LIBTOOLFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = YutaroSuzuki.Mocomes;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				RESOURCES_TARGETED_DEVICE_FAMILY = "";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
