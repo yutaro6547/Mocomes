@@ -7,18 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		33CA5A586DF41EE9CB80B318 /* Pods_Mocomes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 972A0A1E5816728288BB5D8C /* Pods_Mocomes.framework */; };
+		BDB5B847C71B4B348C58BC0E /* Pods_MocomesUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99D47FFD84CB593FBAC7232B /* Pods_MocomesUITests.framework */; };
+		C7A1358F73A045044FEA66E0 /* Pods_MocomesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E03E2523060C6D21F513A208 /* Pods_MocomesTests.framework */; };
 		DB1B00691E13E3CE00ABF2CA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1B00681E13E3CE00ABF2CA /* AppDelegate.swift */; };
 		DB1B006B1E13E3CE00ABF2CA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1B006A1E13E3CE00ABF2CA /* ViewController.swift */; };
 		DB1B006E1E13E3CE00ABF2CA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB1B006C1E13E3CE00ABF2CA /* Main.storyboard */; };
-		DB1B00701E13E3CE00ABF2CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB1B006F1E13E3CE00ABF2CA /* Assets.xcassets */; };
 		DB1B00731E13E3CE00ABF2CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB1B00711E13E3CE00ABF2CA /* LaunchScreen.storyboard */; };
 		DB1B007E1E13E3CE00ABF2CA /* MocomesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1B007D1E13E3CE00ABF2CA /* MocomesTests.swift */; };
 		DB1B00891E13E3CE00ABF2CA /* MocomesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1B00881E13E3CE00ABF2CA /* MocomesUITests.swift */; };
-		DBAD9B251E14029B000BDAD1 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBAD9B241E14029B000BDAD1 /* SwiftyJSON.framework */; };
-		DBAD9B271E1402B3000BDAD1 /* SwiftyDropbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBAD9B261E1402B3000BDAD1 /* SwiftyDropbox.framework */; };
-		DBAD9B291E1402C6000BDAD1 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBAD9B281E1402C6000BDAD1 /* Alamofire.framework */; };
-		DBAD9B2B1E1402DC000BDAD1 /* RAMAnimatedTabBarController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBAD9B2A1E1402DC000BDAD1 /* RAMAnimatedTabBarController.framework */; };
 		DBAD9B2D1E140C13000BDAD1 /* CAPSPageMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBAD9B2C1E140C13000BDAD1 /* CAPSPageMenu.swift */; };
+		DBD1D0BC1E14D08900C60072 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBD1D0BB1E14D08900C60072 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,11 +38,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5223311C1A733CD4238F57F8 /* Pods-MocomesUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MocomesUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MocomesUITests/Pods-MocomesUITests.release.xcconfig"; sourceTree = "<group>"; };
+		590BF481FB4533695565642B /* Pods-MocomesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MocomesTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MocomesTests/Pods-MocomesTests.debug.xcconfig"; sourceTree = "<group>"; };
+		972A0A1E5816728288BB5D8C /* Pods_Mocomes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Mocomes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		99D47FFD84CB593FBAC7232B /* Pods_MocomesUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MocomesUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C720A04A3153F9F682D3B004 /* Pods-MocomesUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MocomesUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MocomesUITests/Pods-MocomesUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		CDE4B96FED2D29BDA1CF99F6 /* Pods-Mocomes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mocomes.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Mocomes/Pods-Mocomes.debug.xcconfig"; sourceTree = "<group>"; };
 		DB1B00651E13E3CE00ABF2CA /* Mocomes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mocomes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB1B00681E13E3CE00ABF2CA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DB1B006A1E13E3CE00ABF2CA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DB1B006D1E13E3CE00ABF2CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		DB1B006F1E13E3CE00ABF2CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DB1B00721E13E3CE00ABF2CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DB1B00741E13E3CE00ABF2CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DB1B00791E13E3CE00ABF2CA /* MocomesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MocomesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -52,11 +56,11 @@
 		DB1B00841E13E3CE00ABF2CA /* MocomesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MocomesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB1B00881E13E3CE00ABF2CA /* MocomesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MocomesUITests.swift; sourceTree = "<group>"; };
 		DB1B008A1E13E3CE00ABF2CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DBAD9B241E14029B000BDAD1 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = SOURCE_ROOT; };
-		DBAD9B261E1402B3000BDAD1 /* SwiftyDropbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyDropbox.framework; path = Carthage/Build/iOS/SwiftyDropbox.framework; sourceTree = SOURCE_ROOT; };
-		DBAD9B281E1402C6000BDAD1 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = SOURCE_ROOT; };
-		DBAD9B2A1E1402DC000BDAD1 /* RAMAnimatedTabBarController.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RAMAnimatedTabBarController.framework; path = Carthage/Build/iOS/RAMAnimatedTabBarController.framework; sourceTree = SOURCE_ROOT; };
 		DBAD9B2C1E140C13000BDAD1 /* CAPSPageMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CAPSPageMenu.swift; sourceTree = "<group>"; };
+		DBD1D0BB1E14D08900C60072 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E03E2523060C6D21F513A208 /* Pods_MocomesTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MocomesTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E596006722004053B3021A32 /* Pods-Mocomes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mocomes.release.xcconfig"; path = "Pods/Target Support Files/Pods-Mocomes/Pods-Mocomes.release.xcconfig"; sourceTree = "<group>"; };
+		FDB14AC7BA85C9D3CDF5F91C /* Pods-MocomesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MocomesTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MocomesTests/Pods-MocomesTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,10 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DBAD9B2B1E1402DC000BDAD1 /* RAMAnimatedTabBarController.framework in Frameworks */,
-				DBAD9B291E1402C6000BDAD1 /* Alamofire.framework in Frameworks */,
-				DBAD9B271E1402B3000BDAD1 /* SwiftyDropbox.framework in Frameworks */,
-				DBAD9B251E14029B000BDAD1 /* SwiftyJSON.framework in Frameworks */,
+				33CA5A586DF41EE9CB80B318 /* Pods_Mocomes.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7A1358F73A045044FEA66E0 /* Pods_MocomesTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,12 +84,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BDB5B847C71B4B348C58BC0E /* Pods_MocomesUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5A1AA4537D4C1AE0D68249DD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CDE4B96FED2D29BDA1CF99F6 /* Pods-Mocomes.debug.xcconfig */,
+				E596006722004053B3021A32 /* Pods-Mocomes.release.xcconfig */,
+				590BF481FB4533695565642B /* Pods-MocomesTests.debug.xcconfig */,
+				FDB14AC7BA85C9D3CDF5F91C /* Pods-MocomesTests.release.xcconfig */,
+				C720A04A3153F9F682D3B004 /* Pods-MocomesUITests.debug.xcconfig */,
+				5223311C1A733CD4238F57F8 /* Pods-MocomesUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A99C850147963884265DEF15 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				972A0A1E5816728288BB5D8C /* Pods_Mocomes.framework */,
+				E03E2523060C6D21F513A208 /* Pods_MocomesTests.framework */,
+				99D47FFD84CB593FBAC7232B /* Pods_MocomesUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		DB1B005C1E13E3CD00ABF2CA = {
 			isa = PBXGroup;
 			children = (
@@ -95,7 +121,8 @@
 				DB1B007C1E13E3CE00ABF2CA /* MocomesTests */,
 				DB1B00871E13E3CE00ABF2CA /* MocomesUITests */,
 				DB1B00661E13E3CE00ABF2CA /* Products */,
-				DBAD9B231E13FE9D000BDAD1 /* Frameworks */,
+				5A1AA4537D4C1AE0D68249DD /* Pods */,
+				A99C850147963884265DEF15 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -115,7 +142,7 @@
 				DB1B00971E13ECA200ABF2CA /* Menu */,
 				DB1B00961E13EC2900ABF2CA /* Basics */,
 				DBAD9B2E1E140C1D000BDAD1 /* PageMenu */,
-				DB1B006F1E13E3CE00ABF2CA /* Assets.xcassets */,
+				DBD1D0BB1E14D08900C60072 /* Assets.xcassets */,
 			);
 			path = Mocomes;
 			sourceTree = "<group>";
@@ -157,18 +184,6 @@
 			name = Menu;
 			sourceTree = "<group>";
 		};
-		DBAD9B231E13FE9D000BDAD1 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				DBAD9B2A1E1402DC000BDAD1 /* RAMAnimatedTabBarController.framework */,
-				DBAD9B281E1402C6000BDAD1 /* Alamofire.framework */,
-				DBAD9B261E1402B3000BDAD1 /* SwiftyDropbox.framework */,
-				DBAD9B241E14029B000BDAD1 /* SwiftyJSON.framework */,
-			);
-			name = Frameworks;
-			path = Mocomes;
-			sourceTree = "<group>";
-		};
 		DBAD9B2E1E140C1D000BDAD1 /* PageMenu */ = {
 			isa = PBXGroup;
 			children = (
@@ -184,10 +199,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DB1B008D1E13E3CE00ABF2CA /* Build configuration list for PBXNativeTarget "Mocomes" */;
 			buildPhases = (
+				9EA0DBBDA34ACC612AF80E4D /* [CP] Check Pods Manifest.lock */,
 				DB1B00611E13E3CD00ABF2CA /* Sources */,
 				DB1B00621E13E3CD00ABF2CA /* Frameworks */,
 				DB1B00631E13E3CD00ABF2CA /* Resources */,
 				DBAD9B221E13FBB6000BDAD1 /* ShellScript */,
+				DA71CE717002F95D37FD7109 /* [CP] Embed Pods Frameworks */,
+				ECAED62E4941B2A94B75938B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -202,9 +220,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DB1B00901E13E3CE00ABF2CA /* Build configuration list for PBXNativeTarget "MocomesTests" */;
 			buildPhases = (
+				A8F5DBF5D689B2B4FD831119 /* [CP] Check Pods Manifest.lock */,
 				DB1B00751E13E3CE00ABF2CA /* Sources */,
 				DB1B00761E13E3CE00ABF2CA /* Frameworks */,
 				DB1B00771E13E3CE00ABF2CA /* Resources */,
+				5771CCD00FD91F35FAC5A431 /* [CP] Embed Pods Frameworks */,
+				9D6549DAECF427D434B1870C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -220,9 +241,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DB1B00931E13E3CE00ABF2CA /* Build configuration list for PBXNativeTarget "MocomesUITests" */;
 			buildPhases = (
+				2402F704CBF7087EAE35FE9B /* [CP] Check Pods Manifest.lock */,
 				DB1B00801E13E3CE00ABF2CA /* Sources */,
 				DB1B00811E13E3CE00ABF2CA /* Frameworks */,
 				DB1B00821E13E3CE00ABF2CA /* Resources */,
+				B41E2D860D374FEA6123391B /* [CP] Embed Pods Frameworks */,
+				E26B719E0B9D873BD8146307 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -246,6 +270,7 @@
 				TargetAttributes = {
 					DB1B00641E13E3CD00ABF2CA = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = KPET473WUQ;
 						ProvisioningStyle = Automatic;
 					};
 					DB1B00781E13E3CE00ABF2CA = {
@@ -286,7 +311,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DB1B00731E13E3CE00ABF2CA /* LaunchScreen.storyboard in Resources */,
-				DB1B00701E13E3CE00ABF2CA /* Assets.xcassets in Resources */,
+				DBD1D0BC1E14D08900C60072 /* Assets.xcassets in Resources */,
 				DB1B006E1E13E3CE00ABF2CA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -308,23 +333,153 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		2402F704CBF7087EAE35FE9B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5771CCD00FD91F35FAC5A431 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MocomesTests/Pods-MocomesTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9D6549DAECF427D434B1870C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MocomesTests/Pods-MocomesTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9EA0DBBDA34ACC612AF80E4D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A8F5DBF5D689B2B4FD831119 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B41E2D860D374FEA6123391B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MocomesUITests/Pods-MocomesUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DA71CE717002F95D37FD7109 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Mocomes/Pods-Mocomes-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		DBAD9B221E13FBB6000BDAD1 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
-				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/SwiftyJSON.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/animated-tab-bar.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/SwiftyDropbox.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/AlamofireImage.framework",
 			);
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "/usr/local/bin/carthage copy-frameworks";
+			shellScript = "";
+		};
+		E26B719E0B9D873BD8146307 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MocomesUITests/Pods-MocomesUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ECAED62E4941B2A94B75938B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Mocomes/Pods-Mocomes-resources.sh\"\n";
+			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -393,6 +548,7 @@
 		DB1B008B1E13E3CE00ABF2CA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -430,9 +586,14 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_PKGINFO_FILE = YES;
+				INFOPLIST_FILE = Mocomes/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MACH_O_TYPE = mh_execute;
 				MTL_ENABLE_DEBUG_INFO = YES;
-				ONLY_ACTIVE_ARCH = YES;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "$(inherited)";
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -443,6 +604,7 @@
 		DB1B008C1E13E3CE00ABF2CA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -474,8 +636,13 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_PKGINFO_FILE = YES;
+				INFOPLIST_FILE = Mocomes/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MACH_O_TYPE = mh_execute;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "$(inherited)";
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -485,14 +652,18 @@
 		};
 		DB1B008E1E13E3CE00ABF2CA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CDE4B96FED2D29BDA1CF99F6 /* Pods-Mocomes.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = KPET473WUQ;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = Mocomes/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MACH_O_TYPE = mh_execute;
 				PRODUCT_BUNDLE_IDENTIFIER = YutaroSuzuki.Mocomes;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
@@ -501,14 +672,18 @@
 		};
 		DB1B008F1E13E3CE00ABF2CA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E596006722004053B3021A32 /* Pods-Mocomes.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = KPET473WUQ;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = Mocomes/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MACH_O_TYPE = mh_execute;
 				PRODUCT_BUNDLE_IDENTIFIER = YutaroSuzuki.Mocomes;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
@@ -517,6 +692,7 @@
 		};
 		DB1B00911E13E3CE00ABF2CA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 590BF481FB4533695565642B /* Pods-MocomesTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -531,6 +707,7 @@
 		};
 		DB1B00921E13E3CE00ABF2CA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FDB14AC7BA85C9D3CDF5F91C /* Pods-MocomesTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -545,6 +722,7 @@
 		};
 		DB1B00941E13E3CE00ABF2CA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C720A04A3153F9F682D3B004 /* Pods-MocomesUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = MocomesUITests/Info.plist;
@@ -558,6 +736,7 @@
 		};
 		DB1B00951E13E3CE00ABF2CA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5223311C1A733CD4238F57F8 /* Pods-MocomesUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = MocomesUITests/Info.plist;
