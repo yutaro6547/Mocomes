@@ -11,14 +11,14 @@
 		BDB5B847C71B4B348C58BC0E /* Pods_MocomesUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99D47FFD84CB593FBAC7232B /* Pods_MocomesUITests.framework */; };
 		C7A1358F73A045044FEA66E0 /* Pods_MocomesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E03E2523060C6D21F513A208 /* Pods_MocomesTests.framework */; };
 		DB1B00691E13E3CE00ABF2CA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1B00681E13E3CE00ABF2CA /* AppDelegate.swift */; };
-		DB1B006B1E13E3CE00ABF2CA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1B006A1E13E3CE00ABF2CA /* ViewController.swift */; };
-		DB1B006E1E13E3CE00ABF2CA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB1B006C1E13E3CE00ABF2CA /* Main.storyboard */; };
 		DB1B00731E13E3CE00ABF2CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB1B00711E13E3CE00ABF2CA /* LaunchScreen.storyboard */; };
 		DB1B007E1E13E3CE00ABF2CA /* MocomesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1B007D1E13E3CE00ABF2CA /* MocomesTests.swift */; };
 		DB1B00891E13E3CE00ABF2CA /* MocomesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1B00881E13E3CE00ABF2CA /* MocomesUITests.swift */; };
 		DBAD9B2D1E140C13000BDAD1 /* CAPSPageMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBAD9B2C1E140C13000BDAD1 /* CAPSPageMenu.swift */; };
 		DBB011E81E153AE500AE2367 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBB011E71E153AE500AE2367 /* SystemConfiguration.framework */; };
 		DBB011EA1E153AF100AE2367 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBB011E91E153AF100AE2367 /* Security.framework */; };
+		DBB011EE1E153C6C00AE2367 /* MenuScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB011ED1E153C6C00AE2367 /* MenuScreen.swift */; };
+		DBB011F41E153D5000AE2367 /* MenuScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBB011F31E153D5000AE2367 /* MenuScreen.storyboard */; };
 		DBD1D0BC1E14D08900C60072 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBD1D0BB1E14D08900C60072 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
@@ -48,8 +48,6 @@
 		CDE4B96FED2D29BDA1CF99F6 /* Pods-Mocomes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mocomes.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Mocomes/Pods-Mocomes.debug.xcconfig"; sourceTree = "<group>"; };
 		DB1B00651E13E3CE00ABF2CA /* Mocomes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mocomes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB1B00681E13E3CE00ABF2CA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DB1B006A1E13E3CE00ABF2CA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		DB1B006D1E13E3CE00ABF2CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DB1B00721E13E3CE00ABF2CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DB1B00741E13E3CE00ABF2CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DB1B00791E13E3CE00ABF2CA /* MocomesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MocomesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -61,6 +59,8 @@
 		DBAD9B2C1E140C13000BDAD1 /* CAPSPageMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CAPSPageMenu.swift; sourceTree = "<group>"; };
 		DBB011E71E153AE500AE2367 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		DBB011E91E153AF100AE2367 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		DBB011ED1E153C6C00AE2367 /* MenuScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuScreen.swift; sourceTree = "<group>"; };
+		DBB011F31E153D5000AE2367 /* MenuScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MenuScreen.storyboard; sourceTree = "<group>"; };
 		DBD1D0BB1E14D08900C60072 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E03E2523060C6D21F513A208 /* Pods_MocomesTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MocomesTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E596006722004053B3021A32 /* Pods-Mocomes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mocomes.release.xcconfig"; path = "Pods/Target Support Files/Pods-Mocomes/Pods-Mocomes.release.xcconfig"; sourceTree = "<group>"; };
@@ -186,8 +186,8 @@
 		DB1B00971E13ECA200ABF2CA /* Menu */ = {
 			isa = PBXGroup;
 			children = (
-				DB1B006A1E13E3CE00ABF2CA /* ViewController.swift */,
-				DB1B006C1E13E3CE00ABF2CA /* Main.storyboard */,
+				DBB011ED1E153C6C00AE2367 /* MenuScreen.swift */,
+				DBB011F31E153D5000AE2367 /* MenuScreen.storyboard */,
 			);
 			name = Menu;
 			sourceTree = "<group>";
@@ -319,7 +319,7 @@
 			files = (
 				DB1B00731E13E3CE00ABF2CA /* LaunchScreen.storyboard in Resources */,
 				DBD1D0BC1E14D08900C60072 /* Assets.xcassets in Resources */,
-				DB1B006E1E13E3CE00ABF2CA /* Main.storyboard in Resources */,
+				DBB011F41E153D5000AE2367 /* MenuScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -482,7 +482,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DB1B006B1E13E3CE00ABF2CA /* ViewController.swift in Sources */,
+				DBB011EE1E153C6C00AE2367 /* MenuScreen.swift in Sources */,
 				DB1B00691E13E3CE00ABF2CA /* AppDelegate.swift in Sources */,
 				DBAD9B2D1E140C13000BDAD1 /* CAPSPageMenu.swift in Sources */,
 			);
@@ -520,14 +520,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		DB1B006C1E13E3CE00ABF2CA /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DB1B006D1E13E3CE00ABF2CA /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		DB1B00711E13E3CE00ABF2CA /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
