@@ -9,6 +9,6 @@
 import Foundation
 import UIKit
 
-class MenuTabTime: UITabBarItem {
+class MenuTabTime: UIViewController {
   
 }

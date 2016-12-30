@@ -9,6 +9,5 @@
 import Foundation
 import UIKit
 
-class MenuTabUser: UITabBarItem {
-  
+class MenuTabUser: UIViewController {
 }

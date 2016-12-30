@@ -9,6 +9,6 @@
 import Foundation
 import UIKit
 
-class MenuTabTalk: UITabBarItem {
+class MenuTabTalk: UIViewController {
   
 }

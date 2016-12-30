@@ -9,6 +9,6 @@
 import Foundation
 import UIKit
 
-class MenuTabSetting: UITabBarItem {
+class MenuTabSetting: UIViewController {
   
 }
