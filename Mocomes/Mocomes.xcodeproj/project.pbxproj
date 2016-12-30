@@ -27,8 +27,6 @@
 		DBFB4F141E168C35004F8B8E /* MenuTalkScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBFB4F131E168C35004F8B8E /* MenuTalkScreen.storyboard */; };
 		DBFB4F161E168C62004F8B8E /* MenuTimeScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBFB4F151E168C62004F8B8E /* MenuTimeScreen.storyboard */; };
 		DBFB4F181E168C76004F8B8E /* MenuSettingScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBFB4F171E168C76004F8B8E /* MenuSettingScreen.storyboard */; };
-		DBFB4F1B1E16A395004F8B8E /* TalkScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBFB4F1A1E16A395004F8B8E /* TalkScreen.storyboard */; };
-		DBFB4F1D1E16A3F9004F8B8E /* TalkScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBFB4F1C1E16A3F9004F8B8E /* TalkScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,8 +76,6 @@
 		DBFB4F131E168C35004F8B8E /* MenuTalkScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MenuTalkScreen.storyboard; sourceTree = "<group>"; };
 		DBFB4F151E168C62004F8B8E /* MenuTimeScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MenuTimeScreen.storyboard; sourceTree = "<group>"; };
 		DBFB4F171E168C76004F8B8E /* MenuSettingScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MenuSettingScreen.storyboard; sourceTree = "<group>"; };
-		DBFB4F1A1E16A395004F8B8E /* TalkScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TalkScreen.storyboard; sourceTree = "<group>"; };
-		DBFB4F1C1E16A3F9004F8B8E /* TalkScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TalkScreen.swift; sourceTree = "<group>"; };
 		E03E2523060C6D21F513A208 /* Pods_MocomesTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MocomesTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E596006722004053B3021A32 /* Pods-Mocomes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mocomes.release.xcconfig"; path = "Pods/Target Support Files/Pods-Mocomes/Pods-Mocomes.release.xcconfig"; sourceTree = "<group>"; };
 		FDB14AC7BA85C9D3CDF5F91C /* Pods-MocomesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MocomesTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MocomesTests/Pods-MocomesTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -169,7 +165,6 @@
 				DBFB4F101E168BDB004F8B8E /* MenuSettingScreen */,
 				DBFB4F0F1E168B9E004F8B8E /* MenuTimeLineScreen */,
 				DBFB4F0E1E168B8A004F8B8E /* MenuTalkScreen */,
-				DBFB4F191E16A355004F8B8E /* TalkScreen */,
 				DBFB4F0D1E168B7D004F8B8E /* MenuUserScreen */,
 				DB1B00961E13EC2900ABF2CA /* Basics */,
 				DBD1D0BB1E14D08900C60072 /* Assets.xcassets */,
@@ -248,15 +243,6 @@
 				DBFB4F171E168C76004F8B8E /* MenuSettingScreen.storyboard */,
 			);
 			name = MenuSettingScreen;
-			sourceTree = "<group>";
-		};
-		DBFB4F191E16A355004F8B8E /* TalkScreen */ = {
-			isa = PBXGroup;
-			children = (
-				DBFB4F1C1E16A3F9004F8B8E /* TalkScreen.swift */,
-				DBFB4F1A1E16A395004F8B8E /* TalkScreen.storyboard */,
-			);
-			name = TalkScreen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -376,7 +362,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DBFB4F1B1E16A395004F8B8E /* TalkScreen.storyboard in Resources */,
 				DBFB4F121E168C22004F8B8E /* MenuUserScreen.storyboard in Resources */,
 				DBFB4F141E168C35004F8B8E /* MenuTalkScreen.storyboard in Resources */,
 				DBFB4F161E168C62004F8B8E /* MenuTimeScreen.storyboard in Resources */,
@@ -549,7 +534,6 @@
 				DBB011FA1E15476A00AE2367 /* MenuTabTalk.swift in Sources */,
 				DBB011FE1E15478800AE2367 /* MenuTabSetting.swift in Sources */,
 				DBB011EE1E153C6C00AE2367 /* MenuScreen.swift in Sources */,
-				DBFB4F1D1E16A3F9004F8B8E /* TalkScreen.swift in Sources */,
 				DBB011FC1E15477900AE2367 /* MenuTabTime.swift in Sources */,
 				DB1B00691E13E3CE00ABF2CA /* AppDelegate.swift in Sources */,
 				DBB011F81E15475A00AE2367 /* MenuTabUser.swift in Sources */,
