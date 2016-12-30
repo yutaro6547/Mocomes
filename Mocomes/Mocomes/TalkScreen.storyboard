@@ -12,7 +12,7 @@
         <!--Talk Screen-->
         <scene sceneID="27T-J1-1Lj">
             <objects>
-                <viewController id="QnU-eV-Z6z" customClass="TalkScreen" customModule="Mocomes" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TalkScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="QnU-eV-Z6z" customClass="TalkScreen" customModule="Mocomes" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="pjH-dk-OG4"/>
                         <viewControllerLayoutGuide type="bottom" id="Ban-N9-wOz"/>

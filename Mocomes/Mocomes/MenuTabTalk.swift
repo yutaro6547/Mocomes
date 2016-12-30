@@ -9,12 +9,19 @@
 import UIKit
 
 class MenuTabTalk: UIViewController {
+  @IBAction func testButton(_ sender: Any) {
+    // segueを使用しない場合
+    // storyboardのインスタンス取得
+    let storyboard: UIStoryboard = UIStoryboard(name: "TalkScreen", bundle: nil)
+    // 遷移先のTeacherSetingを指定してstoryboardをインスタンス化
+    let settingTransition = storyboard.instantiateInitialViewController() as! TalkScreen
+    // アニメーション設定
+    settingTransition.modalTransitionStyle = UIModalTransitionStyle.crossDissolve
+    // 画面遷移
+    self.present(settingTransition, animated: true, completion: nil)
+  }
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-    }
+  override func viewDidLoad() {
+    super.viewDidLoad()
+  }
 }
