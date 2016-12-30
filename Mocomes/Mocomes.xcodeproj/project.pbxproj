@@ -14,7 +14,6 @@
 		DB1B00731E13E3CE00ABF2CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB1B00711E13E3CE00ABF2CA /* LaunchScreen.storyboard */; };
 		DB1B007E1E13E3CE00ABF2CA /* MocomesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1B007D1E13E3CE00ABF2CA /* MocomesTests.swift */; };
 		DB1B00891E13E3CE00ABF2CA /* MocomesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1B00881E13E3CE00ABF2CA /* MocomesUITests.swift */; };
-		DBAD9B2D1E140C13000BDAD1 /* CAPSPageMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBAD9B2C1E140C13000BDAD1 /* CAPSPageMenu.swift */; };
 		DBB011E81E153AE500AE2367 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBB011E71E153AE500AE2367 /* SystemConfiguration.framework */; };
 		DBB011EA1E153AF100AE2367 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBB011E91E153AF100AE2367 /* Security.framework */; };
 		DBB011EE1E153C6C00AE2367 /* MenuScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB011ED1E153C6C00AE2367 /* MenuScreen.swift */; };
@@ -64,7 +63,6 @@
 		DB1B00841E13E3CE00ABF2CA /* MocomesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MocomesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB1B00881E13E3CE00ABF2CA /* MocomesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MocomesUITests.swift; sourceTree = "<group>"; };
 		DB1B008A1E13E3CE00ABF2CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DBAD9B2C1E140C13000BDAD1 /* CAPSPageMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CAPSPageMenu.swift; sourceTree = "<group>"; };
 		DBB011E71E153AE500AE2367 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		DBB011E91E153AF100AE2367 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		DBB011ED1E153C6C00AE2367 /* MenuScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuScreen.swift; sourceTree = "<group>"; };
@@ -163,13 +161,12 @@
 		DB1B00671E13E3CE00ABF2CA /* Mocomes */ = {
 			isa = PBXGroup;
 			children = (
-				DBFB4F101E168BDB004F8B8E /* SettingScreen */,
-				DBFB4F0F1E168B9E004F8B8E /* TimeLineScreen */,
-				DBFB4F0E1E168B8A004F8B8E /* TalkScreen */,
-				DBFB4F0D1E168B7D004F8B8E /* UserScreen */,
 				DB1B00971E13ECA200ABF2CA /* Menu */,
+				DBFB4F101E168BDB004F8B8E /* MenuSettingScreen */,
+				DBFB4F0F1E168B9E004F8B8E /* MenuTimeLineScreen */,
+				DBFB4F0E1E168B8A004F8B8E /* MenuTalkScreen */,
+				DBFB4F0D1E168B7D004F8B8E /* MenuUserScreen */,
 				DB1B00961E13EC2900ABF2CA /* Basics */,
-				DBAD9B2E1E140C1D000BDAD1 /* PageMenu */,
 				DBD1D0BB1E14D08900C60072 /* Assets.xcassets */,
 			);
 			path = Mocomes;
@@ -212,48 +209,40 @@
 			name = Menu;
 			sourceTree = "<group>";
 		};
-		DBAD9B2E1E140C1D000BDAD1 /* PageMenu */ = {
-			isa = PBXGroup;
-			children = (
-				DBAD9B2C1E140C13000BDAD1 /* CAPSPageMenu.swift */,
-			);
-			name = PageMenu;
-			sourceTree = "<group>";
-		};
-		DBFB4F0D1E168B7D004F8B8E /* UserScreen */ = {
+		DBFB4F0D1E168B7D004F8B8E /* MenuUserScreen */ = {
 			isa = PBXGroup;
 			children = (
 				DBB011F71E15475A00AE2367 /* MenuTabUser.swift */,
 				DBFB4F111E168C22004F8B8E /* MenuUserScreen.storyboard */,
 			);
-			name = UserScreen;
+			name = MenuUserScreen;
 			sourceTree = "<group>";
 		};
-		DBFB4F0E1E168B8A004F8B8E /* TalkScreen */ = {
+		DBFB4F0E1E168B8A004F8B8E /* MenuTalkScreen */ = {
 			isa = PBXGroup;
 			children = (
 				DBB011F91E15476A00AE2367 /* MenuTabTalk.swift */,
 				DBFB4F131E168C35004F8B8E /* MenuTalkScreen.storyboard */,
 			);
-			name = TalkScreen;
+			name = MenuTalkScreen;
 			sourceTree = "<group>";
 		};
-		DBFB4F0F1E168B9E004F8B8E /* TimeLineScreen */ = {
+		DBFB4F0F1E168B9E004F8B8E /* MenuTimeLineScreen */ = {
 			isa = PBXGroup;
 			children = (
 				DBB011FB1E15477900AE2367 /* MenuTabTime.swift */,
 				DBFB4F151E168C62004F8B8E /* MenuTimeScreen.storyboard */,
 			);
-			name = TimeLineScreen;
+			name = MenuTimeLineScreen;
 			sourceTree = "<group>";
 		};
-		DBFB4F101E168BDB004F8B8E /* SettingScreen */ = {
+		DBFB4F101E168BDB004F8B8E /* MenuSettingScreen */ = {
 			isa = PBXGroup;
 			children = (
 				DBB011FD1E15478800AE2367 /* MenuTabSetting.swift */,
 				DBFB4F171E168C76004F8B8E /* MenuSettingScreen.storyboard */,
 			);
-			name = SettingScreen;
+			name = MenuSettingScreen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -548,7 +537,6 @@
 				DBB011FC1E15477900AE2367 /* MenuTabTime.swift in Sources */,
 				DB1B00691E13E3CE00ABF2CA /* AppDelegate.swift in Sources */,
 				DBB011F81E15475A00AE2367 /* MenuTabUser.swift in Sources */,
-				DBAD9B2D1E140C13000BDAD1 /* CAPSPageMenu.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
