@@ -41,10 +41,10 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <items>
-                                    <tabBarItem selectedImage="TabUserIcon" id="7pb-Q7-Out" customClass="MenuTabUser" customModule="Mocomes" customModuleProvider="target"/>
-                                    <tabBarItem title="" selectedImage="TabTalkIcon" id="i0z-Ch-lZv" customClass="MenuTabTalk" customModule="Mocomes" customModuleProvider="target"/>
-                                    <tabBarItem title="" selectedImage="TabTimeLineIcon" id="Syq-qm-8sc" customClass="MenuTabTime" customModule="Mocomes" customModuleProvider="target"/>
-                                    <tabBarItem selectedImage="TabSettingIcon" id="6Nu-7d-DwF" customClass="MenuTabSetting" customModule="Mocomes" customModuleProvider="target"/>
+                                    <tabBarItem title="User" image="TabUserIcon" selectedImage="TabUserIcon" id="7pb-Q7-Out" customClass="MenuTabUser" customModule="Mocomes" customModuleProvider="target"/>
+                                    <tabBarItem title="Talk" image="TabTalkIcon" selectedImage="TabTalkIcon" id="i0z-Ch-lZv" customClass="MenuTabTalk" customModule="Mocomes" customModuleProvider="target"/>
+                                    <tabBarItem title="Timeline" image="TabTimeLineIcon" selectedImage="TabTimeLineIcon" id="Syq-qm-8sc" customClass="MenuTabTime" customModule="Mocomes" customModuleProvider="target"/>
+                                    <tabBarItem title="Setting" image="TabSettingIcon" selectedImage="TabSettingIcon" id="6Nu-7d-DwF" customClass="MenuTabSetting" customModule="Mocomes" customModuleProvider="target"/>
                                 </items>
                             </tabBar>
                         </subviews>
