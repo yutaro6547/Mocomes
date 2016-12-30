@@ -11,7 +11,8 @@ target 'Mocomes' do
     pod 'Alamofire'
     pod 'RKNotificationHub'
     pod 'RAMAnimatedTabBarController'
-    pod 'MMPopLabel' 
+    pod 'MMPopLabel'
+    pod 'JSQMessagesViewController' 
   target 'MocomesTests' do
     inherit! :search_paths
     # Pods for testing

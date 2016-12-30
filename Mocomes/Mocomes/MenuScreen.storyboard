@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="pop-fU-54q">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--MenuUserScreen-->
+        <scene sceneID="v9k-dg-vZY">
+            <objects>
+                <viewControllerPlaceholder storyboardName="MenuUserScreen" id="TyY-5j-NAE" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="PKf-CX-Hee"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aH4-ZY-Ct2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="543" y="-956"/>
+        </scene>
+        <!--MenuTalkScreen-->
+        <scene sceneID="B7S-kA-vbx">
+            <objects>
+                <viewControllerPlaceholder storyboardName="MenuTalkScreen" id="y5k-Ot-7ei" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="Lne-yu-ghJ"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Z0V-JL-uPd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="542" y="-771"/>
+        </scene>
+        <!--Menu Screen-->
+        <scene sceneID="XS4-9a-BaE">
+            <objects>
+                <tabBarController id="pop-fU-54q" customClass="MenuScreen" customModule="Mocomes" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="S3X-bJ-2aB"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="15w-EK-qhy">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="TyY-5j-NAE" kind="relationship" relationship="viewControllers" id="gqb-9d-dqw"/>
+                        <segue destination="y5k-Ot-7ei" kind="relationship" relationship="viewControllers" id="i5v-nO-TTF"/>
+                        <segue destination="bYd-Ro-bLn" kind="relationship" relationship="viewControllers" id="vc5-Ny-oSw"/>
+                        <segue destination="0cl-AL-CDU" kind="relationship" relationship="viewControllers" id="9rj-8O-A52"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eXB-Ch-mud" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-234" y="-674"/>
+        </scene>
+        <!--MenuTimeScreen-->
+        <scene sceneID="ASr-8m-jpc">
+            <objects>
+                <viewControllerPlaceholder storyboardName="MenuTimeScreen" id="bYd-Ro-bLn" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="Pu4-0B-3Jy"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gs4-a5-4aH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="542" y="-588"/>
+        </scene>
+        <!--MenuSettingScreen-->
+        <scene sceneID="vXG-Zc-gxS">
+            <objects>
+                <viewControllerPlaceholder storyboardName="MenuSettingScreen" id="0cl-AL-CDU" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="Hpn-jO-lAU"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qC5-TK-aDH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="542" y="-402"/>
+        </scene>
+    </scenes>
+</document>
