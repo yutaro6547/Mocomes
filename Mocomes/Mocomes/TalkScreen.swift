@@ -8,6 +8,8 @@
 
 import UIKit
 import JSQMessagesViewController
+import Firebase
+
 
 class TalkScreen: JSQMessagesViewController {
 
@@ -47,8 +49,8 @@ class TalkScreen: JSQMessagesViewController {
   func didPressSendButton(button: UIButton!, withMessageText text: String!, senderId: String!, senderDisplayName: String!, date: NSDate!) {
 
     //新しいメッセージデータを追加する
-    let message = JSQMessage(senderId: senderId, displayName: senderDisplayName, text: text)
-    self.messages?.append(message!)
+    let message = FIRDatabase.database().reference()
+    message.child("messages").childByAutoId().setValue(["senderId": senderId, "text": text, "displayName": senderDisplayName])
 
     //メッセジの送信処理を完了する(画面上にメッセージが表示される)
     self.finishReceivingMessage(animated: true)
