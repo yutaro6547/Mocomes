@@ -1,2 +1,3 @@
 # Mocomes
-メッセンジャーアプリ
+1対1対応でチャットができるメッセンジャーアプリ
+FirebaseとJSQMessagesViewControllerを使ってテスト的に作成する
