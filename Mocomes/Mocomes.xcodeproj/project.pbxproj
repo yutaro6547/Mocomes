@@ -22,6 +22,7 @@
 		DBB011FC1E15477900AE2367 /* MenuTabTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB011FB1E15477900AE2367 /* MenuTabTime.swift */; };
 		DBB011FE1E15478800AE2367 /* MenuTabSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB011FD1E15478800AE2367 /* MenuTabSetting.swift */; };
 		DBD1D0BC1E14D08900C60072 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBD1D0BB1E14D08900C60072 /* Assets.xcassets */; };
+		DBD6545F1E1783C900A6968C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DBD6545E1E1783C900A6968C /* GoogleService-Info.plist */; };
 		DBFB4F121E168C22004F8B8E /* MenuUserScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBFB4F111E168C22004F8B8E /* MenuUserScreen.storyboard */; };
 		DBFB4F141E168C35004F8B8E /* MenuTalkScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBFB4F131E168C35004F8B8E /* MenuTalkScreen.storyboard */; };
 		DBFB4F161E168C62004F8B8E /* MenuTimeScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBFB4F151E168C62004F8B8E /* MenuTimeScreen.storyboard */; };
@@ -73,6 +74,7 @@
 		DBB011FB1E15477900AE2367 /* MenuTabTime.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTabTime.swift; sourceTree = "<group>"; };
 		DBB011FD1E15478800AE2367 /* MenuTabSetting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTabSetting.swift; sourceTree = "<group>"; };
 		DBD1D0BB1E14D08900C60072 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DBD6545E1E1783C900A6968C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		DBFB4F111E168C22004F8B8E /* MenuUserScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MenuUserScreen.storyboard; sourceTree = "<group>"; };
 		DBFB4F131E168C35004F8B8E /* MenuTalkScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MenuTalkScreen.storyboard; sourceTree = "<group>"; };
 		DBFB4F151E168C62004F8B8E /* MenuTimeScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MenuTimeScreen.storyboard; sourceTree = "<group>"; };
@@ -201,6 +203,7 @@
 				DB1B00681E13E3CE00ABF2CA /* AppDelegate.swift */,
 				DB1B00711E13E3CE00ABF2CA /* LaunchScreen.storyboard */,
 				DB1B00741E13E3CE00ABF2CA /* Info.plist */,
+				DBD6545E1E1783C900A6968C /* GoogleService-Info.plist */,
 			);
 			name = Basics;
 			sourceTree = "<group>";
@@ -378,6 +381,7 @@
 			files = (
 				DBFB4F5A1E16BDA3004F8B8E /* TalkScreen.storyboard in Resources */,
 				DBFB4F121E168C22004F8B8E /* MenuUserScreen.storyboard in Resources */,
+				DBD6545F1E1783C900A6968C /* GoogleService-Info.plist in Resources */,
 				DBFB4F141E168C35004F8B8E /* MenuTalkScreen.storyboard in Resources */,
 				DBFB4F161E168C62004F8B8E /* MenuTimeScreen.storyboard in Resources */,
 				DB1B00731E13E3CE00ABF2CA /* LaunchScreen.storyboard in Resources */,

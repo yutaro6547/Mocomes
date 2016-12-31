@@ -7,7 +7,7 @@ target 'Mocomes' do
 
   # Pods for Mocomes
     pod 'SwiftyJSON'
-    pod 'SwiftyDropbox'
+    pod 'Firebase/Core'
     pod 'Alamofire'
     pod 'RKNotificationHub'
     pod 'RAMAnimatedTabBarController'
