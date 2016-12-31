@@ -22,6 +22,22 @@ class TalkScreen: JSQMessagesViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
 
+    let ref = FIRDatabase.database().reference()
+    ref.observe(.value, with: { snapshot in
+      guard let dic = snapshot.value as? Dictionary<String, AnyObject> else {
+        return
+      }
+      guard let posts = dic["messages"] as? Dictionary<String, Dictionary<String, String>> else {
+        return
+      }
+      self.messages = posts.values.map { dic in
+        let senderId = dic["senderId"] ?? ""
+        let text = dic["text"] ?? ""
+        let displayName = dic["displayName"] ?? ""
+        return JSQMessage(senderId: senderId,  displayName: displayName, text: text)
+      }
+      self.collectionView.reloadData()
+    })
     //自分のsenderId, senderDisokayNameを設定
     self.senderId = "user1"
     self.senderDisplayName = "hoge"
@@ -51,13 +67,6 @@ class TalkScreen: JSQMessagesViewController {
     //新しいメッセージデータを追加する
     let message = FIRDatabase.database().reference()
     message.child("messages").childByAutoId().setValue(["senderId": senderId, "text": text, "displayName": senderDisplayName])
-
-    //メッセジの送信処理を完了する(画面上にメッセージが表示される)
-    self.finishReceivingMessage(animated: true)
-
-    //擬似的に自動でメッセージを受信
-    self.receiveAutoMessage()
-
   }
 
   //アイテムごとに参照するメッセージデータを返す
