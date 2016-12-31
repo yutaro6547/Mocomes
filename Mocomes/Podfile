@@ -9,6 +9,7 @@ target 'Mocomes' do
     pod 'SwiftyJSON'
     pod 'Firebase/Core'
     pod 'Firebase/Database'
+    pod 'Firebase/Auth'
     pod 'Alamofire'
     pod 'RKNotificationHub'
     pod 'RAMAnimatedTabBarController'

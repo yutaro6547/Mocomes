@@ -10,8 +10,9 @@ import UIKit
 import JSQMessagesViewController
 import Firebase
 
-
 class TalkScreen: JSQMessagesViewController {
+
+  var ref: Firebase!
 
   var messages: [JSQMessage]?
   var incomingBubble: JSQMessagesBubbleImage!
@@ -19,25 +20,33 @@ class TalkScreen: JSQMessagesViewController {
   var incomingAvatar: JSQMessagesAvatarImage!
   var outgoingAvatar: JSQMessagesAvatarImage!
 
+  func setupFirebase() {
+
+    // firebaseのセットアップ
+    ref = Firebase(url: "https://mocomes-1594c.firebaseio.com/")
+
+    // 最新25件のデータをデータベースから取得する
+    // 最新のデータ追加されるたびに最新データを取得する
+    ref.queryLimitedToLast(25).observeEventType(UIEventType.ChildAdded, withBlock: { (snapshot) in
+      let text = snapshot.value["text"] as? String
+      let sender = snapshot.value["from"] as? String
+      let name = snapshot.value["name"] as? String
+      print(snapshot.value!)
+      let message = JSQMessage(senderId: sender, displayName: name, text: text)
+      self.messages?.append(message)
+      self.finishReceivingMessage()
+    })
+  }
+
+
+
   override func viewDidLoad() {
     super.viewDidLoad()
+    // Do any additional setup after loading the view, typically from a nib.
+    inputToolbar!.contentView!.leftBarButtonItem = nil
+    automaticallyScrollsToMostRecentMessage = true
 
-    let ref = FIRDatabase.database().reference()
-    ref.observe(.value, with: { snapshot in
-      guard let dic = snapshot.value as? Dictionary<String, AnyObject> else {
-        return
-      }
-      guard let posts = dic["messages"] as? Dictionary<String, Dictionary<String, String>> else {
-        return
-      }
-      self.messages = posts.values.map { dic in
-        let senderId = dic["senderId"] ?? ""
-        let text = dic["text"] ?? ""
-        let displayName = dic["displayName"] ?? ""
-        return JSQMessage(senderId: senderId,  displayName: displayName, text: text)
-      }
-      self.collectionView.reloadData()
-    })
+
     //自分のsenderId, senderDisokayNameを設定
     self.senderId = "user1"
     self.senderDisplayName = "hoge"
@@ -45,15 +54,15 @@ class TalkScreen: JSQMessagesViewController {
     //吹き出しの設定
     let bubbleFactory = JSQMessagesBubbleImageFactory()
     self.incomingBubble = bubbleFactory?.incomingMessagesBubbleImage(with: UIColor.jsq_messageBubbleLightGray())
-    self.outgoingBubble = bubbleFactory?.outgoingMessagesBubbleImage(with: UIColor.jsq_messageBubbleGreen())
+    self.outgoingBubble = bubbleFactory?.outgoingMessagesBubbleImage(with: UIColor.jsq_messageBubbleBlue())
 
     //アバターの設定
-    self.incomingAvatar = JSQMessagesAvatarImageFactory.avatarImage(with: UIImage(named: "gudetama")!, diameter: 64)
-    self.outgoingAvatar = JSQMessagesAvatarImageFactory.avatarImage(with: UIImage(named: "suraime")!, diameter: 64)
+    self.incomingAvatar = JSQMessagesAvatarImageFactory.avatarImage(with: UIImage(named: "Swift-Logo")!, diameter: 64)
+    self.outgoingAvatar = JSQMessagesAvatarImageFactory.avatarImage(with: UIImage(named: "Swift-Logo")!, diameter: 64)
 
     //メッセージデータの配列を初期化
     self.messages = []
-
+    setupFirebase()
   }
 
   override func didReceiveMemoryWarning() {
@@ -64,9 +73,14 @@ class TalkScreen: JSQMessagesViewController {
   //Sendボタンが押された時に呼ばれる
   func didPressSendButton(button: UIButton!, withMessageText text: String!, senderId: String!, senderDisplayName: String!, date: NSDate!) {
 
-    //新しいメッセージデータを追加する
-    let message = FIRDatabase.database().reference()
-    message.child("messages").childByAutoId().setValue(["senderId": senderId, "text": text, "displayName": senderDisplayName])
+    //メッセジの送信処理を完了する(画面上にメッセージが表示される)
+    self.finishReceivingMessage(animated: true)
+
+    //firebaseにデータを送信、保存する
+    let post1 = ["from": senderId, "name": senderDisplayName, "text":text]
+    let post1Ref = ref.childByAutoId()
+    post1Ref.setValue(post1)
+
   }
 
   //アイテムごとに参照するメッセージデータを返す
@@ -93,18 +107,9 @@ class TalkScreen: JSQMessagesViewController {
   }
 
   //アイテムの総数を返す
-  override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+  func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
     return (self.messages?.count)!
   }
 
-  //返信メッセージを受信する
-  func receiveAutoMessage() {
-    Timer.scheduledTimer(timeInterval: 1, target: self, selector: Selector(("didFinishMessageTimer:")), userInfo: nil, repeats: false)
-  }
 
-  func didFinishMessageTimer(sender: Timer) {
-    let message = JSQMessage(senderId: "user2", displayName: "underscore", text: "Hello!")
-    self.messages?.append(message!)
-    self.finishReceivingMessage(animated: true)
-  }
 }
