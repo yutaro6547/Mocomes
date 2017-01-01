@@ -12,8 +12,6 @@ import Firebase
 
 class TalkScreen: JSQMessagesViewController {
 
-  var ref: Firebase!
-
   var messages: [JSQMessage]?
   var incomingBubble: JSQMessagesBubbleImage!
   var outgoingBubble: JSQMessagesBubbleImage!
@@ -21,19 +19,13 @@ class TalkScreen: JSQMessagesViewController {
   var outgoingAvatar: JSQMessagesAvatarImage!
 
   func setupFirebase() {
-
-    // firebaseのセットアップ
-    ref = Firebase(url: "https://mocomes-1594c.firebaseio.com/")
-
-    // 最新25件のデータをデータベースから取得する
-    // 最新のデータ追加されるたびに最新データを取得する
-    ref.queryLimitedToLast(25).observeEventType(UIEventType.ChildAdded, withBlock: { (snapshot) in
-      let text = snapshot.value["text"] as? String
-      let sender = snapshot.value["from"] as? String
-      let name = snapshot.value["name"] as? String
-      print(snapshot.value!)
-      let message = JSQMessage(senderId: sender, displayName: name, text: text)
-      self.messages?.append(message)
+    let ref = FIRDatabase.database().reference()
+    ref.queryLimited(toLast: 100).observe(FIRDataEventType.childAdded, with: { (snapshot) in
+      let text = snapshot.value(forKey: "text")
+      let sender = snapshot.value(forKey: "from")
+      let name = snapshot.value(forKey: "name")
+      let message = JSQMessage(senderId: sender as! String!, displayName: name as! String!, text: text as! String!)
+      self.messages?.append(message!)
       self.finishReceivingMessage()
     })
   }
@@ -57,8 +49,8 @@ class TalkScreen: JSQMessagesViewController {
     self.outgoingBubble = bubbleFactory?.outgoingMessagesBubbleImage(with: UIColor.jsq_messageBubbleBlue())
 
     //アバターの設定
-    self.incomingAvatar = JSQMessagesAvatarImageFactory.avatarImage(with: UIImage(named: "Swift-Logo")!, diameter: 64)
-    self.outgoingAvatar = JSQMessagesAvatarImageFactory.avatarImage(with: UIImage(named: "Swift-Logo")!, diameter: 64)
+    self.incomingAvatar = JSQMessagesAvatarImageFactory.avatarImage(with: UIImage(named: "gudetama")!, diameter: 64)
+    self.outgoingAvatar = JSQMessagesAvatarImageFactory.avatarImage(with: UIImage(named: "suraime")!, diameter: 64)
 
     //メッセージデータの配列を初期化
     self.messages = []
@@ -75,12 +67,16 @@ class TalkScreen: JSQMessagesViewController {
 
     //メッセジの送信処理を完了する(画面上にメッセージが表示される)
     self.finishReceivingMessage(animated: true)
+    sendTextToDb(text: text)
+  }
 
-    //firebaseにデータを送信、保存する
-    let post1 = ["from": senderId, "name": senderDisplayName, "text":text]
-    let post1Ref = ref.childByAutoId()
-    post1Ref.setValue(post1)
-
+  func sendTextToDb(text: String) {
+    let rootRef = FIRDatabase.database().reference()
+    let post = ["from": senderId,
+                "name": senderDisplayName,
+                "text": text]
+    let postRef = rootRef.childByAutoId()
+    postRef.setValue(post)
   }
 
   //アイテムごとに参照するメッセージデータを返す
