@@ -21,10 +21,11 @@ class TalkScreen: JSQMessagesViewController {
   func setupFirebase() {
     let ref = FIRDatabase.database().reference()
     ref.queryLimited(toLast: 100).observe(FIRDataEventType.childAdded, with: { (snapshot) in
-      let text = snapshot.value(forKey: "text")
-      let sender = snapshot.value(forKey: "from")
-      let name = snapshot.value(forKey: "name")
-      let message = JSQMessage(senderId: sender as! String!, displayName: name as! String!, text: text as! String!)
+      let snapshotValue = snapshot.value as! NSDictionary
+      let text = snapshotValue["text"] as! String
+      let sender = snapshotValue["from"] as! String
+      let name = snapshotValue["name"] as! String
+      let message = JSQMessage(senderId: sender, displayName: name, text: text)
       self.messages?.append(message!)
       self.finishReceivingMessage()
     })
@@ -32,7 +33,6 @@ class TalkScreen: JSQMessagesViewController {
 
   override func viewDidLoad() {
     super.viewDidLoad()
-    // Do any additional setup after loading the view, typically from a nib.
     inputToolbar!.contentView!.leftBarButtonItem = nil
     automaticallyScrollsToMostRecentMessage = true
 
@@ -57,7 +57,6 @@ class TalkScreen: JSQMessagesViewController {
 
   override func didReceiveMemoryWarning() {
     super.didReceiveMemoryWarning()
-    // Dispose of any resources that can be recreated.
   }
 
   //Sendボタンが押された時に呼ばれる
@@ -70,9 +69,9 @@ class TalkScreen: JSQMessagesViewController {
 
   func sendTextToDb(text: String) {
     let rootRef = FIRDatabase.database().reference()
-    let post = ["from": senderId,
-                "name": senderDisplayName,
-                "text": text]
+    let post:Dictionary<String, Any>? = ["from": senderId,
+                                         "name": senderDisplayName,
+                                         "text": text]
     let postRef = rootRef.childByAutoId()
     postRef.setValue(post)
   }
