@@ -46,13 +46,19 @@ class SignUpScreen: UIViewController, UITextFieldDelegate {
     FIRAuth.auth()?.createUser(withEmail: email, password: password, completion: { (user, error) in
       //エラーなしなら、認証完了
       if error == nil{
-        // エラーがない場合にはそのままログイン画面に飛び、ログインしてもらう
-        self.transitionToLogin()
-    } else {
-
-      print("\(error?.localizedDescription)")
-    }
-   })
+        // メールのバリデーションを行う
+        user?.sendEmailVerification(completion: { (error) in
+          if error == nil {
+            // エラーがない場合にはそのままログイン画面に飛び、ログインしてもらう
+            self.transitionToLogin()
+          }else {
+            print("\(error?.localizedDescription)")
+          }
+        })
+      }else {
+        print("\(error?.localizedDescription)")
+      }
+    })
   }
 
   func transitionToLogin() {

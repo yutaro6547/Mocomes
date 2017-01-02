@@ -13,13 +13,13 @@ import Firebase
 class AppDelegate: UIResponder, UIApplicationDelegate {
   
   var window: UIWindow?
-  var initialview: UITabBarController?
+  var initialview: UIViewController?
 
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
     FIRApp.configure()
 
     let storyboard: UIStoryboard = UIStoryboard(name: "SignUpScreen", bundle: Bundle.main)
-    let mainViewController: UITabBarController = storyboard.instantiateInitialViewController() as! UITabBarController
+    let mainViewController: UIViewController = storyboard.instantiateInitialViewController()!
     self.window = UIWindow(frame: UIScreen.main.bounds)
     self.initialview = mainViewController
     self.window?.rootViewController = initialview
