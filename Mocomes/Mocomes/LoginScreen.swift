@@ -57,8 +57,14 @@ class LoginScreen: UIViewController, UITextFieldDelegate {
     return true
   }
 
-  //ログイン完了後に、ListViewControllerへの遷移のためのメソッド
   func transitionToView()  {
-    self.performSegue(withIdentifier: "toVC", sender: self)
+    // storyboardのインスタンス取得
+    let storyboard: UIStoryboard = UIStoryboard(name: "MenuScreen", bundle: nil)
+    // 遷移先のTeacherSetingを指定してstoryboardをインスタンス化
+    let LoginTransition = storyboard.instantiateInitialViewController() as! MenuScreen
+    // アニメーション設定
+    LoginTransition.modalTransitionStyle = UIModalTransitionStyle.crossDissolve
+    // 画面遷移
+    self.present(LoginTransition, animated: true, completion: nil)
   }
 }
