@@ -12,6 +12,7 @@ import Firebase
 
 class TalkScreen: JSQMessagesViewController {
 
+  var ref: FIRDatabaseReference!
   var messages: [JSQMessage]?
   var incomingBubble: JSQMessagesBubbleImage!
   var outgoingBubble: JSQMessagesBubbleImage!
@@ -19,7 +20,7 @@ class TalkScreen: JSQMessagesViewController {
   var outgoingAvatar: JSQMessagesAvatarImage!
 
   func setupFirebase() {
-    let ref = FIRDatabase.database().reference(fromURL: "https://mocomes-1594c.firebaseio.com/")
+    ref = FIRDatabase.database().reference(fromURL: "https://mocomes-1594c.firebaseio.com/")
     ref.queryLimited(toLast: 25).observe(FIRDataEventType.childAdded, with: { (snapshot) in
       let snapshotValue = snapshot.value as! NSDictionary
       let text = snapshotValue["text"] as! String
@@ -64,11 +65,10 @@ class TalkScreen: JSQMessagesViewController {
   }
 
   func sendTextToDb(text: String) {
-    let rootRef = FIRDatabase.database().reference()
     let post:Dictionary<String, Any>? = ["from": senderId,
                                          "name": senderDisplayName,
                                          "text": text]
-    let postRef = rootRef.childByAutoId()
+    let postRef = ref.childByAutoId()
     postRef.setValue(post)
   }
 
