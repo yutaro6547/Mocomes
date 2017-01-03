@@ -14,19 +14,26 @@
 		DB1B00731E13E3CE00ABF2CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB1B00711E13E3CE00ABF2CA /* LaunchScreen.storyboard */; };
 		DB1B007E1E13E3CE00ABF2CA /* MocomesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1B007D1E13E3CE00ABF2CA /* MocomesTests.swift */; };
 		DB1B00891E13E3CE00ABF2CA /* MocomesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1B00881E13E3CE00ABF2CA /* MocomesUITests.swift */; };
+		DBA432A21E19283C0077B272 /* SignUpScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBA432A11E19283C0077B272 /* SignUpScreen.storyboard */; };
+		DBA432A41E1928620077B272 /* SignUpScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA432A31E1928620077B272 /* SignUpScreen.swift */; };
+		DBA432A61E1928D00077B272 /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA432A51E1928D00077B272 /* LoginScreen.swift */; };
+		DBA432AB1E19290F0077B272 /* LoginScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBA432AA1E19290F0077B272 /* LoginScreen.storyboard */; };
 		DBB011E81E153AE500AE2367 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBB011E71E153AE500AE2367 /* SystemConfiguration.framework */; };
 		DBB011EA1E153AF100AE2367 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBB011E91E153AF100AE2367 /* Security.framework */; };
 		DBB011EE1E153C6C00AE2367 /* MenuScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB011ED1E153C6C00AE2367 /* MenuScreen.swift */; };
 		DBB011F41E153D5000AE2367 /* MenuScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBB011F31E153D5000AE2367 /* MenuScreen.storyboard */; };
 		DBB011F81E15475A00AE2367 /* MenuTabUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB011F71E15475A00AE2367 /* MenuTabUser.swift */; };
-		DBB011FA1E15476A00AE2367 /* MenuTabTalk.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB011F91E15476A00AE2367 /* MenuTabTalk.swift */; };
 		DBB011FC1E15477900AE2367 /* MenuTabTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB011FB1E15477900AE2367 /* MenuTabTime.swift */; };
 		DBB011FE1E15478800AE2367 /* MenuTabSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB011FD1E15478800AE2367 /* MenuTabSetting.swift */; };
 		DBD1D0BC1E14D08900C60072 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBD1D0BB1E14D08900C60072 /* Assets.xcassets */; };
+		DBD6545F1E1783C900A6968C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DBD6545E1E1783C900A6968C /* GoogleService-Info.plist */; };
 		DBFB4F121E168C22004F8B8E /* MenuUserScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBFB4F111E168C22004F8B8E /* MenuUserScreen.storyboard */; };
 		DBFB4F141E168C35004F8B8E /* MenuTalkScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBFB4F131E168C35004F8B8E /* MenuTalkScreen.storyboard */; };
 		DBFB4F161E168C62004F8B8E /* MenuTimeScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBFB4F151E168C62004F8B8E /* MenuTimeScreen.storyboard */; };
 		DBFB4F181E168C76004F8B8E /* MenuSettingScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBFB4F171E168C76004F8B8E /* MenuSettingScreen.storyboard */; };
+		DBFB4F5A1E16BDA3004F8B8E /* TalkScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBFB4F591E16BDA3004F8B8E /* TalkScreen.storyboard */; };
+		DBFB4F5C1E16BDC2004F8B8E /* TalkScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBFB4F5B1E16BDC2004F8B8E /* TalkScreen.swift */; };
+		DBFB4F601E16BEA2004F8B8E /* MenuTabTalk.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBFB4F5F1E16BEA2004F8B8E /* MenuTabTalk.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,19 +70,26 @@
 		DB1B00841E13E3CE00ABF2CA /* MocomesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MocomesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB1B00881E13E3CE00ABF2CA /* MocomesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MocomesUITests.swift; sourceTree = "<group>"; };
 		DB1B008A1E13E3CE00ABF2CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DBA432A11E19283C0077B272 /* SignUpScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SignUpScreen.storyboard; sourceTree = "<group>"; };
+		DBA432A31E1928620077B272 /* SignUpScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpScreen.swift; sourceTree = "<group>"; };
+		DBA432A51E1928D00077B272 /* LoginScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
+		DBA432AA1E19290F0077B272 /* LoginScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LoginScreen.storyboard; sourceTree = "<group>"; };
 		DBB011E71E153AE500AE2367 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		DBB011E91E153AF100AE2367 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		DBB011ED1E153C6C00AE2367 /* MenuScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuScreen.swift; sourceTree = "<group>"; };
 		DBB011F31E153D5000AE2367 /* MenuScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MenuScreen.storyboard; sourceTree = "<group>"; };
 		DBB011F71E15475A00AE2367 /* MenuTabUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTabUser.swift; sourceTree = "<group>"; };
-		DBB011F91E15476A00AE2367 /* MenuTabTalk.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTabTalk.swift; sourceTree = "<group>"; };
 		DBB011FB1E15477900AE2367 /* MenuTabTime.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTabTime.swift; sourceTree = "<group>"; };
 		DBB011FD1E15478800AE2367 /* MenuTabSetting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTabSetting.swift; sourceTree = "<group>"; };
 		DBD1D0BB1E14D08900C60072 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DBD6545E1E1783C900A6968C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		DBFB4F111E168C22004F8B8E /* MenuUserScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MenuUserScreen.storyboard; sourceTree = "<group>"; };
 		DBFB4F131E168C35004F8B8E /* MenuTalkScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MenuTalkScreen.storyboard; sourceTree = "<group>"; };
 		DBFB4F151E168C62004F8B8E /* MenuTimeScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MenuTimeScreen.storyboard; sourceTree = "<group>"; };
 		DBFB4F171E168C76004F8B8E /* MenuSettingScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MenuSettingScreen.storyboard; sourceTree = "<group>"; };
+		DBFB4F591E16BDA3004F8B8E /* TalkScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TalkScreen.storyboard; sourceTree = "<group>"; };
+		DBFB4F5B1E16BDC2004F8B8E /* TalkScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TalkScreen.swift; sourceTree = "<group>"; };
+		DBFB4F5F1E16BEA2004F8B8E /* MenuTabTalk.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTabTalk.swift; sourceTree = "<group>"; };
 		E03E2523060C6D21F513A208 /* Pods_MocomesTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MocomesTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E596006722004053B3021A32 /* Pods-Mocomes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mocomes.release.xcconfig"; path = "Pods/Target Support Files/Pods-Mocomes/Pods-Mocomes.release.xcconfig"; sourceTree = "<group>"; };
 		FDB14AC7BA85C9D3CDF5F91C /* Pods-MocomesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MocomesTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MocomesTests/Pods-MocomesTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -161,10 +175,13 @@
 		DB1B00671E13E3CE00ABF2CA /* Mocomes */ = {
 			isa = PBXGroup;
 			children = (
+				DBA432A71E1928E50077B272 /* Login */,
+				DBA432A01E1928130077B272 /* SignUp */,
 				DB1B00971E13ECA200ABF2CA /* Menu */,
 				DBFB4F101E168BDB004F8B8E /* MenuSettingScreen */,
 				DBFB4F0F1E168B9E004F8B8E /* MenuTimeLineScreen */,
 				DBFB4F0E1E168B8A004F8B8E /* MenuTalkScreen */,
+				DBFB4F581E16BD71004F8B8E /* TalkScreen */,
 				DBFB4F0D1E168B7D004F8B8E /* MenuUserScreen */,
 				DB1B00961E13EC2900ABF2CA /* Basics */,
 				DBD1D0BB1E14D08900C60072 /* Assets.xcassets */,
@@ -196,6 +213,7 @@
 				DB1B00681E13E3CE00ABF2CA /* AppDelegate.swift */,
 				DB1B00711E13E3CE00ABF2CA /* LaunchScreen.storyboard */,
 				DB1B00741E13E3CE00ABF2CA /* Info.plist */,
+				DBD6545E1E1783C900A6968C /* GoogleService-Info.plist */,
 			);
 			name = Basics;
 			sourceTree = "<group>";
@@ -207,6 +225,24 @@
 				DBB011F31E153D5000AE2367 /* MenuScreen.storyboard */,
 			);
 			name = Menu;
+			sourceTree = "<group>";
+		};
+		DBA432A01E1928130077B272 /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				DBA432A31E1928620077B272 /* SignUpScreen.swift */,
+				DBA432A11E19283C0077B272 /* SignUpScreen.storyboard */,
+			);
+			name = SignUp;
+			sourceTree = "<group>";
+		};
+		DBA432A71E1928E50077B272 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				DBA432A51E1928D00077B272 /* LoginScreen.swift */,
+				DBA432AA1E19290F0077B272 /* LoginScreen.storyboard */,
+			);
+			name = Login;
 			sourceTree = "<group>";
 		};
 		DBFB4F0D1E168B7D004F8B8E /* MenuUserScreen */ = {
@@ -221,7 +257,7 @@
 		DBFB4F0E1E168B8A004F8B8E /* MenuTalkScreen */ = {
 			isa = PBXGroup;
 			children = (
-				DBB011F91E15476A00AE2367 /* MenuTabTalk.swift */,
+				DBFB4F5F1E16BEA2004F8B8E /* MenuTabTalk.swift */,
 				DBFB4F131E168C35004F8B8E /* MenuTalkScreen.storyboard */,
 			);
 			name = MenuTalkScreen;
@@ -243,6 +279,15 @@
 				DBFB4F171E168C76004F8B8E /* MenuSettingScreen.storyboard */,
 			);
 			name = MenuSettingScreen;
+			sourceTree = "<group>";
+		};
+		DBFB4F581E16BD71004F8B8E /* TalkScreen */ = {
+			isa = PBXGroup;
+			children = (
+				DBFB4F5B1E16BDC2004F8B8E /* TalkScreen.swift */,
+				DBFB4F591E16BDA3004F8B8E /* TalkScreen.storyboard */,
+			);
+			name = TalkScreen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -362,10 +407,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DBA432A21E19283C0077B272 /* SignUpScreen.storyboard in Resources */,
+				DBFB4F5A1E16BDA3004F8B8E /* TalkScreen.storyboard in Resources */,
 				DBFB4F121E168C22004F8B8E /* MenuUserScreen.storyboard in Resources */,
+				DBD6545F1E1783C900A6968C /* GoogleService-Info.plist in Resources */,
 				DBFB4F141E168C35004F8B8E /* MenuTalkScreen.storyboard in Resources */,
 				DBFB4F161E168C62004F8B8E /* MenuTimeScreen.storyboard in Resources */,
 				DB1B00731E13E3CE00ABF2CA /* LaunchScreen.storyboard in Resources */,
+				DBA432AB1E19290F0077B272 /* LoginScreen.storyboard in Resources */,
 				DBD1D0BC1E14D08900C60072 /* Assets.xcassets in Resources */,
 				DBB011F41E153D5000AE2367 /* MenuScreen.storyboard in Resources */,
 				DBFB4F181E168C76004F8B8E /* MenuSettingScreen.storyboard in Resources */,
@@ -531,10 +580,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DBB011FA1E15476A00AE2367 /* MenuTabTalk.swift in Sources */,
 				DBB011FE1E15478800AE2367 /* MenuTabSetting.swift in Sources */,
 				DBB011EE1E153C6C00AE2367 /* MenuScreen.swift in Sources */,
+				DBA432A61E1928D00077B272 /* LoginScreen.swift in Sources */,
+				DBFB4F5C1E16BDC2004F8B8E /* TalkScreen.swift in Sources */,
+				DBA432A41E1928620077B272 /* SignUpScreen.swift in Sources */,
 				DBB011FC1E15477900AE2367 /* MenuTabTime.swift in Sources */,
+				DBFB4F601E16BEA2004F8B8E /* MenuTabTalk.swift in Sources */,
 				DB1B00691E13E3CE00ABF2CA /* AppDelegate.swift in Sources */,
 				DBB011F81E15475A00AE2367 /* MenuTabUser.swift in Sources */,
 			);

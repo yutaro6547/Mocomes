@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="mEN-8k-awn">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login Screen-->
+        <scene sceneID="poX-az-8Yl">
+            <objects>
+                <viewController id="mEN-8k-awn" customClass="LoginScreen" customModule="Mocomes" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wuQ-7y-de8"/>
+                        <viewControllerLayoutGuide type="bottom" id="jjE-9N-8vk"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="E1m-qY-VUA">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="your email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1al-MX-ARW">
+                                <rect key="frame" x="87" y="121" width="200" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="XMj-01-mhM"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="your password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="C0p-2b-okL">
+                                <rect key="frame" x="87" y="178" width="200" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="JfS-Cr-Qg6"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r7x-I7-GCU">
+                                <rect key="frame" x="87" y="92" width="200" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="dzq-R1-Z3P"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eZi-YT-npy">
+                                <rect key="frame" x="87" y="159" width="200" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="A2V-Rx-5uS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E6S-22-NUB">
+                                <rect key="frame" x="168" y="318" width="38" height="30"/>
+                                <state key="normal" title="Login"/>
+                                <connections>
+                                    <action selector="loginButton" destination="mEN-8k-awn" eventType="touchUpInside" id="x5b-qm-o70"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="eZi-YT-npy" firstAttribute="top" secondItem="1al-MX-ARW" secondAttribute="bottom" constant="8" symbolic="YES" id="18Z-N6-rhb"/>
+                            <constraint firstItem="eZi-YT-npy" firstAttribute="leading" secondItem="E1m-qY-VUA" secondAttribute="leadingMargin" constant="71" id="1iA-dH-ON7"/>
+                            <constraint firstItem="1al-MX-ARW" firstAttribute="top" secondItem="r7x-I7-GCU" secondAttribute="bottom" constant="8" symbolic="YES" id="3dK-y7-sJY"/>
+                            <constraint firstItem="r7x-I7-GCU" firstAttribute="leading" secondItem="E1m-qY-VUA" secondAttribute="leadingMargin" constant="71" id="Cac-6I-lhv"/>
+                            <constraint firstItem="1al-MX-ARW" firstAttribute="leading" secondItem="E1m-qY-VUA" secondAttribute="leadingMargin" constant="71" id="EBO-Yu-FpN"/>
+                            <constraint firstItem="E6S-22-NUB" firstAttribute="centerY" secondItem="E1m-qY-VUA" secondAttribute="centerY" id="Fcm-J8-59r"/>
+                            <constraint firstItem="r7x-I7-GCU" firstAttribute="top" secondItem="wuQ-7y-de8" secondAttribute="bottom" constant="72" id="S7X-LX-diA"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="C0p-2b-okL" secondAttribute="trailing" constant="72" id="e4E-tc-3Gz"/>
+                            <constraint firstItem="E6S-22-NUB" firstAttribute="centerX" secondItem="E1m-qY-VUA" secondAttribute="centerX" id="ecy-Xj-IYI"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="eZi-YT-npy" secondAttribute="trailing" constant="72" id="hM7-Cu-I6R"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="r7x-I7-GCU" secondAttribute="trailing" constant="72" id="lWa-Yk-psy"/>
+                            <constraint firstItem="C0p-2b-okL" firstAttribute="leading" secondItem="E1m-qY-VUA" secondAttribute="leadingMargin" constant="71" id="st7-cN-niL"/>
+                            <constraint firstItem="C0p-2b-okL" firstAttribute="top" secondItem="1al-MX-ARW" secondAttribute="bottom" constant="27" id="vsg-v8-2Bm"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="1al-MX-ARW" secondAttribute="trailing" constant="72" id="vtd-YP-sZs"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="emailLogin" destination="1al-MX-ARW" id="276-CK-Wga"/>
+                        <outlet property="passwordLogin" destination="C0p-2b-okL" id="zsA-ur-gIn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MAw-Ra-zbh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="417" y="-219"/>
+        </scene>
+    </scenes>
+</document>
