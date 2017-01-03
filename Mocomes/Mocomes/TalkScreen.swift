@@ -17,9 +17,9 @@ class TalkScreen: JSQMessagesViewController {
   var outgoingBubble: JSQMessagesBubbleImage!
   var incomingAvatar: JSQMessagesAvatarImage!
   var outgoingAvatar: JSQMessagesAvatarImage!
+  let ref = FIRDatabase.database().reference()
 
   func setupFirebase() {
-    let ref = FIRDatabase.database().reference()
     ref.queryLimited(toLast: 100).observe(FIRDataEventType.childAdded, with: { (snapshot) in
       let snapshotValue = snapshot.value as! NSDictionary
       let text = snapshotValue["text"] as! String
@@ -60,20 +60,17 @@ class TalkScreen: JSQMessagesViewController {
   }
 
   //Sendボタンが押された時に呼ばれる
-  func didPressSendButton(button: UIButton!, withMessageText text: String!, senderId: String!, senderDisplayName: String!, date: NSDate!) {
-
-    //メッセジの送信処理を完了する(画面上にメッセージが表示される)
+  override func didPressSend(_ button: UIButton!, withMessageText text: String!, senderId: String!, senderDisplayName: String!, date: Date!) {
+    _ = JSQMessage(senderId: senderId, senderDisplayName: senderDisplayName, date: date, text: text)
+    //ex: self.messages.append(message!)
+    self.finishSendingMessage()
+    //メッセージの送信処理を完了する(画面上にメッセージが表示される)
     self.finishReceivingMessage(animated: true)
     sendTextToDb(text: text)
   }
-
+  
   func sendTextToDb(text: String) {
-    let rootRef = FIRDatabase.database().reference()
-    let post:Dictionary<String, Any>? = ["from": senderId,
-                                         "name": senderDisplayName,
-                                         "text": text]
-    let postRef = rootRef.childByAutoId()
-    postRef.setValue(post)
+    self.ref.child((FIRAuth.auth()?.currentUser?.uid)!).childByAutoId().setValue(["user": (FIRAuth.auth()?.currentUser?.uid)!,"text": text, "date": FIRServerValue.timestamp()])
   }
 
   //アイテムごとに参照するメッセージデータを返す
