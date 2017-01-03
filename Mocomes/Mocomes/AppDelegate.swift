@@ -24,21 +24,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     self.initialview = mainViewController
     self.window?.rootViewController = initialview
     self.window?.makeKeyAndVisible()
-
-/*  画面上部に表示しようとしたが保留
-    //ここから追記
-    //TabBarのサイズと、全体のサイズを取得
-    let t_height: CGFloat = self.initialview!.tabBar.frame.size.height;
-    let w_width: CGFloat = self.window!.frame.size.width;
-    let w_height: CGFloat = self.window!.frame.size.height;
-
-    //TabBarを移動
-    self.initialview?.tabBar.frame = CGRect(x: 0.0, y: 0.0, width: w_width, height: t_height)
-
-    //コンテンツ表示部を移動
-    let contentView: UIView = (self.initialview?.tabBar.superview)!
-    contentView.frame = CGRect(x: 0, y: t_height, width: w_width, height: w_height - t_height)
-*/
     return true
   }
 

@@ -10,6 +10,7 @@ import UIKit
 import FirebaseAuth
 
 class SignUpScreen: UIViewController, UITextFieldDelegate {
+  
   @IBOutlet var signupEmail: UITextField!
   @IBOutlet var signupPassword: UITextField!
 
@@ -36,20 +37,13 @@ class SignUpScreen: UIViewController, UITextFieldDelegate {
     transitionToLogin()
   }
 
-  //Signupのためのメソッド
   func signup() {
-    //emailTextFieldとpasswordTextFieldに文字がなければ、その後の処理をしない
     guard let email = signupEmail.text else  { return }
     guard let password = signupPassword.text else { return }
-    //FIRAuth.auth()?.createUserWithEmailでサインアップ
-    //第一引数にEmail、第二引数にパスワード
     FIRAuth.auth()?.createUser(withEmail: email, password: password, completion: { (user, error) in
-      //エラーなしなら、認証完了
       if error == nil{
-        // メールのバリデーションを行う
         user?.sendEmailVerification(completion: { (error) in
           if error == nil {
-            // エラーがない場合にはそのままログイン画面に飛び、ログインしてもらう
             self.transitionToLogin()
           }else {
             print("\(error?.localizedDescription)")
@@ -62,13 +56,9 @@ class SignUpScreen: UIViewController, UITextFieldDelegate {
   }
 
   func transitionToLogin() {
-    // storyboardのインスタンス取得
     let storyboard: UIStoryboard = UIStoryboard(name: "LoginScreen", bundle: nil)
-    // 遷移先のTeacherSetingを指定してstoryboardをインスタンス化
     let LoginTransition = storyboard.instantiateInitialViewController() as! LoginScreen
-    // アニメーション設定
     LoginTransition.modalTransitionStyle = UIModalTransitionStyle.crossDissolve
-    // 画面遷移
     self.present(LoginTransition, animated: true, completion: nil)
   }
 
