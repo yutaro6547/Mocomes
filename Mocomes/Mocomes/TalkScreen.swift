@@ -17,15 +17,19 @@ class TalkScreen: JSQMessagesViewController {
   var outgoingBubble: JSQMessagesBubbleImage!
   var incomingAvatar: JSQMessagesAvatarImage!
   var outgoingAvatar: JSQMessagesAvatarImage!
-  let ref = FIRDatabase.database().reference(fromURL: "https://mocomes-1594c.firebaseio.com/")
 
   func setupFirebase() {
-    ref.queryLimited(toLast: 100).observe(FIRDataEventType.childAdded, with: { (snapshot) in
+    let ref = FIRDatabase.database().reference(fromURL: "https://mocomes-1594c.firebaseio.com/")
+    ref.queryLimited(toLast: 25).observe(FIRDataEventType.childAdded, with: { (snapshot) in
       let snapshotValue = snapshot.value as! NSDictionary
       let text = snapshotValue["text"] as! String
+      print("\(text)")
       let sender = snapshotValue["from"] as! String
+      print("\(sender)")
       let name = snapshotValue["name"] as! String
+      print("\(name)")
       let message = JSQMessage(senderId: sender, displayName: name, text: text)
+      print("\(message)")
       self.messages?.append(message!)
       self.finishReceivingMessage()
     })
@@ -42,9 +46,8 @@ class TalkScreen: JSQMessagesViewController {
     let bubbleFactory = JSQMessagesBubbleImageFactory()
     self.incomingBubble = bubbleFactory?.incomingMessagesBubbleImage(with: UIColor.jsq_messageBubbleLightGray())
     self.outgoingBubble = bubbleFactory?.outgoingMessagesBubbleImage(with: UIColor.jsq_messageBubbleBlue())
-
     self.incomingAvatar = JSQMessagesAvatarImageFactory.avatarImage(with: UIImage(named: "gudetama")!, diameter: 64)
-    self.outgoingAvatar = JSQMessagesAvatarImageFactory.avatarImage(with: UIImage(named: "gudetama")!, diameter: 64)
+    self.outgoingAvatar = JSQMessagesAvatarImageFactory.avatarImage(with: UIImage(named: "suraime")!, diameter: 64)
 
     self.messages = []
     setupFirebase()
