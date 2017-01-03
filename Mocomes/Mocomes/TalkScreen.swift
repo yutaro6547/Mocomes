@@ -68,7 +68,7 @@ class TalkScreen: JSQMessagesViewController {
     self.finishReceivingMessage(animated: true)
     sendTextToDb(text: text)
   }
-  
+
   func sendTextToDb(text: String) {
     self.ref.child((FIRAuth.auth()?.currentUser?.uid)!).childByAutoId().setValue(["user": (FIRAuth.auth()?.currentUser?.uid)!,"text": text, "date": FIRServerValue.timestamp()])
   }
